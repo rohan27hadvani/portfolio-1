@@ -11,7 +11,7 @@ export default {
         // 'light1': '#FADCD9',
         // 'bg1': '#F9F1F0',
 
-        'dark1': '#D4C8B4',
+        'dark1': '#90887B',
         'light1': '#D4C8B4',
         'bg1': '#131112',
       },

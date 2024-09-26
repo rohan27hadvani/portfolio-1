@@ -83,7 +83,7 @@ function App() {
               </div>
             </div>
 
-            <div className={`box-1 row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
+            <div className={`bg-dark1 row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
               <div className='text-black font-gilroy font-light pl-6'>
               <div className='flex align-top h-1/3 pt-8'>
                 Test
@@ -95,7 +95,7 @@ function App() {
             </div>
 
 
-            <div className={`bg-dark1 row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
+            <div className={`box-1 row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
               <div className='text-black font-gilroy w-full h-full'>
                 <div className='flex w-full h-4/5'>
                 <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -111,7 +111,7 @@ function App() {
               </div>
             </div>
 
-            <div className={`box-1 row-span-1 col-span-3 basic ${load ?     'moving-7' : ''}`}>
+            <div className={`bg-dark1 row-span-1 col-span-3 basic ${load ?     'moving-7' : ''}`}>
               <div className='w-full h-full flex items-center'>
                 <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
                   <li className='font-light hover:underline'>
