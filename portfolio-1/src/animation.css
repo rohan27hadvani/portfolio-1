@@ -1,7 +1,38 @@
+@keyframes div1 {
+    0% {
+        transform: translate(30%, -20%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-1 {
+    animation: div1 1s ease forwards;
+  }
+
+@keyframes div2 {
+    0% {
+        transform: translate(-30%, 0%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-2 {
+    animation: div2 1s ease forwards;
+  }
+
+
 @keyframes div3 {
     0% {
-      transform: translate(-30%, 15%);
-      opacity: 1;
+      transform: translate(-30%, 20%);
+      opacity: 0;
     }
     100% {
       transform: translate(0, 0);
@@ -9,6 +40,66 @@
     }
   }
   
-  .moving {
+  .moving-3 {
     animation: div3 1s ease forwards;
+  }
+
+@keyframes div4 {
+    0% {
+        transform: translate(30%, 0%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-4 {
+    animation: div4 1s ease forwards;
+  }
+
+@keyframes div5 {
+    0% {
+        transform: translate(-30%, 20%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-5 {
+    animation: div5 1s ease forwards;
+  }
+
+@keyframes div6 {
+    0% {
+        transform: translate(0%, 50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-6 {
+    animation: div6 1s ease forwards;
+  }
+
+@keyframes div7 {
+    0% {
+        transform: translate(20%, 50%);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+    }
+  
+  .moving-7 {
+    animation: div7 1s ease forwards;
   }

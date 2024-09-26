@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 .basic {
-  @apply flex items-center justify-center text-white rounded-3xl hover:shadow hover:shadow-xl hover:scale-105
+  @apply flex items-center justify-center text-white rounded-3xl hover:shadow-xl
     
 }
 
 .box-1 {
   @apply bg-lighcream
 }
+
 
