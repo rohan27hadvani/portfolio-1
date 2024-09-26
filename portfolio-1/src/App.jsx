@@ -20,15 +20,15 @@ function App() {
               Hadvani
             </div>
             </div>
-            <div>
-            <li className='text-black flex gap-16 font-gilroy uppercase text-2xl justify-end pr-8 w-full'>
-            <ul className='font-light'>
+            <div className='w-1/3 pr-12'>
+            <li className='text-black flex gap-16 font-gilroy uppercase text-2xl'>
+            <ul className='font-light hover:underline'>
               Projects
             </ul>
-            <ul className='font-light'>
+            <ul className='font-light hover:underline'>
               About
             </ul>
-            <ul className='font-light'>
+            <ul className='font-light hover:underline'>
               Contact
             </ul>
             </li>
@@ -69,11 +69,42 @@ function App() {
           
           <div className="box-1 row-span-3 col-span-3 basic"> 
             <div className='text-black font-gilroy w-full h-1 pl-8 pr-10  font-light text-2xl'>
+              <section>
               Julia Huang is an innovative AI artist, renowned for blending cutting-edge technology with creative expression. Based in LA, she crafts unique digital art experiences accessible globally.
+              </section>
             </div>
           </div>
-          <div className="bg-cream row-span-3 col-span-3 basic">6</div>
-          <div className="box-1 row-span-1 col-span-3 basic">7</div>
+
+
+
+          <div className="bg-cream row-span-3 col-span-3 basic">
+            6
+          </div>
+          
+          
+          
+          
+          <div className="box-1 row-span-1 col-span-3 basic">
+          <div>
+            <li className='text-black flex gap-16 font-gilroy uppercase text-2xl w-full'>
+            <ul className='font-light hover:underline'>
+              <a href="https://www.instagram.com/rohanhadvani/" target="_blank">
+              Instagram
+              </a>
+            </ul>
+            <ul className='font-light hover:underline'>
+              <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b153/" target='_blank'>
+              LinkedIn
+              </a>
+            </ul>
+            <ul className='font-light hover:underline'>
+              <a href="https://github.com/rohan27hadvani" target='_blank'>
+              GitHub
+              </a>
+            </ul>
+            </li>
+          </div>
+          </div>
         </div>
       </div>
     </div>
