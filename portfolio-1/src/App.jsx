@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';  // Import useEffect
 import './App.css'
 import './fonts.css'
 import './animation.css'
-import profilePhoto from './assets/profilePhoto.jpg';
+import profilePhoto from './assets/profilePhoto.JPG';
 
 function App() {
   const [load, setLoad] = useState(false);
