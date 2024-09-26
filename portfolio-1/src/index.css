@@ -10,5 +10,6 @@
 .box-1 {
   @apply bg-light1
 }
-
-
+.box-1-image {
+  @apply bg-transparent
+}

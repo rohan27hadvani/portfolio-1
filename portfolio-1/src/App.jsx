@@ -6,51 +6,15 @@ import './animation.css'
 import profilePhoto from './assets/profilePhoto.jpg';
 
 function App() {
-  const [div1, setDiv1] = useState(false);
-  const [div2, setDiv2] = useState(false);
-  const [div3, setDiv3] = useState(false);
-  const [div4, setDiv4] = useState(false);
-  const [div5, setDiv5] = useState(false);
-  const [div6, setDiv6] = useState(false);
-  const [div7, setDiv7] = useState(false);
+  const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    const timer1 = setTimeout(() => {
-      setDiv1(true);
-    }, 100);
-
-    const timer2 = setTimeout(() => {
-      setDiv2(true);
-    }, 100);
-
-    const timer3 = setTimeout(() => {
-      setDiv3(true);
-    }, 100);
-
-    const timer4 = setTimeout(() => {
-      setDiv4(true);
-    }, 100);
-
-    const timer5 = setTimeout(() => {
-      setDiv5(true);
-    }, 100);
-    
-    const timer6 = setTimeout(() => {
-      setDiv6(true);
-    }, 100);
-
-    const timer7 = setTimeout(() => {
-      setDiv7(true);
+    const timer = setTimeout(() => {
+      setLoad(true);
     }, 100);
 
     return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-      clearTimeout(timer3);
-      clearTimeout(timer4);
-      clearTimeout(timer5);
-      clearTimeout(timer6);
-      clearTimeout(timer7);
+      clearTimeout(timer);
     };
   }, []);
 
@@ -60,7 +24,7 @@ function App() {
         <div className="w-full h-full">
           <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
           
-            <div className={`box-1 row-span-1 col-span-9 basic ${div1 ? 'moving-1' : ''}`}>
+            <div className={`box-1 row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
               <div className='text-black flex gap-2 font-gilroy uppercase text-2xl justify-start pl-8 w-2/3 items-center'>
                 <div className='italic'>
                   Rohan
@@ -85,7 +49,7 @@ function App() {
             </div>
             
 
-            <div className={`box-1 row-span-4 col-span-4 basic ${div2 ? 'moving-2' : ''}`}>
+            <div className={`box-1 row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
               <div className='text-black font-gilroy text-xl w-full h-full'>
                 <div className='h-1/4 w-full text-right p-8'>
                   Test
@@ -107,19 +71,19 @@ function App() {
               </div>
             </div>
 
-            <div className={`box-1 row-span-4 col-span-2 basic ${div3 ? 'moving-3' : ''}`}>
+            <div className={`box-1-image row-span-4 col-span-2 basic ${load ? 'moving-3' : ''}`}>
               <div className='w-full h-full'>
-              <img className='rounded-3xl' src={profilePhoto} alt="Profile Photo"/>
+              <img className='rounded-3xl object-cover w-full h-full' src={profilePhoto} alt="Profile Photo"/>
               </div>
             </div>
 
-            <div className={`box-1 row-span-6 col-span-3 basic ${div4 ? 'moving-4' : ''}`}>
+            <div className={`box-1 row-span-6 col-span-3 basic ${load ? 'moving-4' : ''}`}>
               <div>
               
               </div>
             </div>
 
-            <div className={`box-1 row-span-3 col-span-3 basic ${div5 ? 'moving-5' : ''}`}> 
+            <div className={`box-1 row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
               <div className='text-black font-gilroy font-light pl-6'>
               <div className='flex align-top h-1/3 pt-8'>
                 Test
@@ -131,7 +95,7 @@ function App() {
             </div>
 
 
-            <div className={`bg-dark1 row-span-3 col-span-3 basic ${div6 ? 'moving-6' : ''}`}>
+            <div className={`bg-dark1 row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
               <div className='text-black font-gilroy w-full h-full'>
                 <div className='flex w-full h-4/5'>
                 <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -147,7 +111,7 @@ function App() {
               </div>
             </div>
 
-            <div className={`box-1 row-span-1 col-span-3 basic ${div7 ?     'moving-7' : ''}`}>
+            <div className={`box-1 row-span-1 col-span-3 basic ${load ?     'moving-7' : ''}`}>
               <div className='w-full h-full flex items-center'>
                 <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
                   <li className='font-light hover:underline'>

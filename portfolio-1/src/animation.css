@@ -1,107 +1,136 @@
 @keyframes div1 {
     0% {
-        transform: translate(30%, -20%);
+        transform: translate(0%, 30%) scale(0.1);
         opacity: 0;
-        width: 0;
+      }
+    40% {
+        transform: translate(0%, 30%) scale(0.1);
+        opacity: 0;
       }
       100% {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(1);
         opacity: 1;
-        width: 100%;
       }
     }
   
   .moving-1 {
-    animation: div1 2s ease forwards;
+    animation: div1 2.2s ease forwards;
   }
 
 @keyframes div2 {
     0% {
-        transform: translate(-30%, 0%);
+        transform: translate(40%, 0%) scale(0.1);
+        opacity: 0;
+      }
+    40% {
+        transform: translate(40%, 0%) scale(0.1);
         opacity: 0;
       }
       100% {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(1);
         opacity: 1;
       }
     }
   
   .moving-2 {
-    animation: div2 2s ease forwards;
+    animation: div2 2.5s ease forwards;
   }
-
 
 @keyframes div3 {
     0% {
-      transform: translate(-30%, 20%);
-      opacity: 0;
-    }
-    100% {
-      transform: translate(0, 0);
+      transform: translate(0%, 0%) scale(0.5);
+      z-index: 2;
       opacity: 1;
+    }
+    50% {
+        transform: translate(-30%, 30%) scale(1);
+        opacity: 1;
+        z-index: 2;
+      }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      z-index: 2;
     }
   }
   
   .moving-3 {
-    animation: div3 2s ease forwards;
+    animation: div3 1.5s ease forwards;
   }
 
 @keyframes div4 {
     0% {
-        transform: translate(30%, 0%);
+        transform: translate(-30%, 0%) scale(0.1);
         opacity: 0;
       }
-      100% {
-        transform: translate(0, 0);
+    50% {
+        transform: translate(-30%, 0%) scale(0.1);
+        opacity: 0;
+      }
+    100% {
+        transform: translate(0, 0) scale(1);
         opacity: 1;
       }
     }
   
   .moving-4 {
-    animation: div4 2s ease forwards;
+    animation: div4 2.6s ease forwards;
   }
 
 @keyframes div5 {
     0% {
-        transform: translate(-30%, 20%);
+        transform: translate(100%, -150%) scale(0.1);
         opacity: 0;
       }
-      100% {
-        transform: translate(0, 0);
+    50% {
+        transform: translate(60%, -75%) scale(0.1);
+        opacity: 0;
+      }
+    100% {
+        transform: translate(0, 0) scale(1);
         opacity: 1;
       }
     }
   
   .moving-5 {
-    animation: div5 2s ease forwards;
+    animation: div5 2.85s ease forwards;
   }
 
 @keyframes div6 {
     0% {
-        transform: translate(0%, 50%);
+        transform: translate(0%, -150%) scale(0.1);
+        opacity: 0; 
+      }
+    50% {
+        transform: translate(0%, -80%) scale(0.1);
         opacity: 0;
       }
       100% {
-        transform: translate(0, 0);
-        opacity: 1;
+        transform: translate(0, 0) scale(1);
+        opacity: 0.65;
       }
     }
   
   .moving-6 {
-    animation: div6 2s ease forwards;
+    opacity: 0.65;
+    animation: div6 3s ease forwards;
   }
 
 @keyframes div7 {
     0% {
-        transform: translate(20%, 50%);
+        transform: translate(-180%, -300%) scale(0.1);
+        opacity: 0;
+      }
+    50% {
+        transform: translate(-90%, -250%) scale(0.1);
         opacity: 0;
       }
       100% {
-        transform: translate(0, 0);
+        transform: translate(0, 0) scale(1);
         opacity: 1;
       }
     }
   
   .moving-7 {
-    animation: div7 2s ease forwards;
+    animation: div7 3.2s ease forwards;
   }
