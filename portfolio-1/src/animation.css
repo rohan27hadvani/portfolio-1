@@ -2,15 +2,17 @@
     0% {
         transform: translate(30%, -20%);
         opacity: 0;
+        width: 0;
       }
       100% {
         transform: translate(0, 0);
         opacity: 1;
+        width: 100%;
       }
     }
   
   .moving-1 {
-    animation: div1 1s ease forwards;
+    animation: div1 2s ease forwards;
   }
 
 @keyframes div2 {
@@ -25,7 +27,7 @@
     }
   
   .moving-2 {
-    animation: div2 1s ease forwards;
+    animation: div2 2s ease forwards;
   }
 
 
@@ -41,7 +43,7 @@
   }
   
   .moving-3 {
-    animation: div3 1s ease forwards;
+    animation: div3 2s ease forwards;
   }
 
 @keyframes div4 {
@@ -56,7 +58,7 @@
     }
   
   .moving-4 {
-    animation: div4 1s ease forwards;
+    animation: div4 2s ease forwards;
   }
 
 @keyframes div5 {
@@ -71,7 +73,7 @@
     }
   
   .moving-5 {
-    animation: div5 1s ease forwards;
+    animation: div5 2s ease forwards;
   }
 
 @keyframes div6 {
@@ -86,7 +88,7 @@
     }
   
   .moving-6 {
-    animation: div6 1s ease forwards;
+    animation: div6 2s ease forwards;
   }
 
 @keyframes div7 {
@@ -101,5 +103,5 @@
     }
   
   .moving-7 {
-    animation: div7 1s ease forwards;
+    animation: div7 2s ease forwards;
   }

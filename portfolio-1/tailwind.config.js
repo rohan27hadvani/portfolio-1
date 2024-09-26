@@ -7,12 +7,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        'cream': '#F8AFA6',
-        'lighcream': '#FADCD9',
-        'lightbg': '#F9F1F0'
+        // 'dark1': '#F8AFA6',
+        // 'light1': '#FADCD9',
+        // 'bg1': '#F9F1F0',
+
+        'dark1': '#4C4A44',
+        'light1': '#D4C8B4',
+        'bg1': '#131112',
       },
       fontFamily: {
-        gilroy: ['Gilroy', 'mono']
+        gilroy: ['Gilroy', 'mono'],
       },
     },
   },
