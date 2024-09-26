@@ -1,0 +1,14 @@
+@keyframes div3 {
+    0% {
+      transform: translate(-30%, 15%);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .moving {
+    animation: div3 1s ease forwards;
+  }
