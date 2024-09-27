@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react';  // Import useEffect
-
-import './App.css'
-import './fonts.css'
-import './animation.css'
+// App.jsx
+import { useState, useEffect } from 'react';
+import './App.css';
+import './fonts.css';
+import './animation.css';
 import profilePhoto from './assets/profilePhoto.JPG';
+import ProgressBar from './ProgressBar';
+import ThemeButton from './ThemeButton';
 
 function App() {
   const [load, setLoad] = useState(false);
+  const [theme, setTheme] = useState('theme1');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -18,13 +21,35 @@ function App() {
     };
   }, []);
 
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+  };
+
+  const themeClasses = {
+    theme1: {
+      bg: 'bg1',
+      dark: 'dark1',
+      light: 'light1',
+    },
+    theme2: {
+      bg: 'bg2',
+      dark: 'dark2',
+      light: 'light2',
+    },
+    theme3: {
+      bg: 'bg3',
+      dark: 'dark3',
+      light: 'light3',
+    },
+  };
+
   return (
     <>
-      <div className="h-screen w-screen p-4 bg-bg1">
+      <div className={`h-screen w-screen p-4 ${themeClasses[theme].bg}`}>
         <div className="w-full h-full">
           <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
           
-            <div className={`box-1 row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
+            <div className={`${themeClasses[theme].light} row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
               <div className='text-black flex gap-2 font-gilroy uppercase text-2xl justify-start pl-8 w-2/3 items-center'>
                 <div className='italic'>
                   Rohan
@@ -48,8 +73,7 @@ function App() {
               </div>
             </div>
             
-
-            <div className={`box-1 row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
+            <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
               <div className='text-black font-gilroy text-xl w-full h-full'>
                 <div className='h-1/4 w-full text-right p-8'>
                   Test
@@ -77,13 +101,57 @@ function App() {
               </div>
             </div>
 
-            <div className={`box-1 row-span-6 col-span-3 basic ${load ? 'moving-4' : ''}`}>
-              <div>
-              
+            <div className={`${themeClasses[theme].light} row-span-6 h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
+              <div className='flex flex-row justify-around w-full h-5/6'>
+                <div className='progressBar justify-around w-full h-full'>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                </div>
+                <div className='progressBar'>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                </div>
+                <div className='progressBar'>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                  <div>
+                    <ProgressBar strokeDashoffset="75" theme={themeClasses[theme]} /> {/* Pass the theme */}
+                  </div>
+                </div>
+              </div>
+              <div className='w-full flex justify-around text-2xl items-center h-1/5'>
+                <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} /> {/* Pass handleThemeChange and currentTheme */}
               </div>
             </div>
 
-            <div className={`bg-dark1 row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
+            <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
               <div className='text-black font-gilroy font-light pl-6'>
               <div className='flex align-top h-1/3 pt-8'>
                 Test
@@ -94,8 +162,7 @@ function App() {
               </div>
             </div>
 
-
-            <div className={`box-1 row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
+            <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
               <div className='text-black font-gilroy w-full h-full'>
                 <div className='flex w-full h-4/5'>
                 <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -111,21 +178,21 @@ function App() {
               </div>
             </div>
 
-            <div className={`bg-dark1 row-span-1 col-span-3 basic ${load ?     'moving-7' : ''}`}>
+            <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}`}>
               <div className='w-full h-full flex items-center'>
                 <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
                   <li className='font-light hover:underline'>
-                    <a href="https://www.instagram.com/rohanhadvani/" target="_blank">
+                    <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
                       Instagram
                     </a>
                   </li>
                   <li className='font-light hover:underline'>
-                    <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b153/" target='_blank'>
+                    <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b153/" target='_blank' rel="noopener noreferrer">
                       LinkedIn
                     </a>
                   </li>
                   <li className='font-light hover:underline'>
-                    <a href="https://github.com/rohan27hadvani" target='_blank'>
+                    <a href="https://github.com/rohan27hadvani" target='_blank' rel="noopener noreferrer">
                       GitHub
                     </a>
                   </li>

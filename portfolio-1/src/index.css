@@ -7,9 +7,71 @@
     
 }
 
-.box-1 {
-  @apply bg-light1
-}
 .box-1-image {
   @apply bg-transparent
+}
+
+.progressBar {
+  @apply flex flex-col w-full h-full justify-around scale-[0.80]
+}
+
+.dark1 {
+  color: #F8AFA6;
+  background: #F8AFA6;
+}
+.light1 {
+  color: #FADCD9;
+  background: #FADCD9;
+}
+.bg1 {
+  color: #F9F1F0;
+  background: #F9F1F0;
+}
+
+.dark2 {
+  color: #90887B;
+  background: #90887B;
+}
+.light2 {
+  color: #D4C8B4;
+  background: #D4C8B4;
+}
+.bg2 {
+  color: #131112;
+  background: #131112;
+}
+
+.dark3 {
+  color: #90887B;
+  background: #90887B;
+}
+.light3 {
+  color: #D4C8B4;
+  background: #D4C8B4;
+}
+.bg3 {
+  color: #131112;
+  background: #131112;
+}
+
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #4c8bf5;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #4c8bf5;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #4c8bf5;
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__custom {
+  transition: all 0.3s ease;
 }

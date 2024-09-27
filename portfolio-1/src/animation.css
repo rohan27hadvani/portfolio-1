@@ -38,7 +38,7 @@
 
 @keyframes div3 {
     0% {
-      transform: translate(0%, 0%) scale(0.5);
+      transform: translate(-30%, 0%) scale(0.5);
       z-index: 2;
       opacity: 1;
     }
@@ -53,6 +53,24 @@
       z-index: 2;
     }
   }
+
+  /* @keyframes div3 {
+    0% {
+      transform: translate(250%, 0%) scale(0.5);
+      z-index: 2;
+      opacity: 1;
+    }
+    50% {
+        transform: translate(250%, 30%) scale(1);
+        opacity: 1;
+        z-index: 2;
+      }
+    100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      z-index: 2;
+    }
+  } */
   
   .moving-3 {
     animation: div3 1.5s ease forwards;
