@@ -2,14 +2,17 @@
     0% {
         transform: translate(0%, 30%) scale(0.1);
         opacity: 0;
+        z-index: 5;
       }
     40% {
         transform: translate(0%, 30%) scale(0.1);
         opacity: 0;
+        z-index: 5;
       }
       100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 5;
       }
     }
   
@@ -21,14 +24,17 @@
     0% {
         transform: translate(40%, 0%) scale(0.1);
         opacity: 0;
+        z-index: 4;
       }
     40% {
         transform: translate(40%, 0%) scale(0.1);
         opacity: 0;
+        z-index: 4;
       }
       100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 4;
       }
     }
   
@@ -39,18 +45,18 @@
 @keyframes div3 {
     0% {
       transform: translate(-30%, 0%) scale(0.5);
-      z-index: 2;
       opacity: 1;
+      z-index: 10;
     }
     50% {
         transform: translate(-30%, 30%) scale(1);
         opacity: 1;
-        z-index: 2;
+        z-index: 10;
       }
     100% {
       transform: translate(0, 0) scale(1);
       opacity: 1;
-      z-index: 2;
+      z-index: 10;
     }
   }
 
@@ -80,14 +86,17 @@
     0% {
         transform: translate(-30%, 0%) scale(0.1);
         opacity: 0;
+        z-index: 3;
       }
     50% {
         transform: translate(-30%, 0%) scale(0.1);
         opacity: 0;
+        z-index: 3;
       }
     100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 3;
       }
     }
   
@@ -99,14 +108,17 @@
     0% {
         transform: translate(100%, -150%) scale(0.1);
         opacity: 0;
+        z-index: 2;
       }
     50% {
         transform: translate(60%, -75%) scale(0.1);
         opacity: 0;
+        z-index: 2;
       }
     100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 2;
       }
     }
   
@@ -118,14 +130,17 @@
     0% {
         transform: translate(0%, -150%) scale(0.1);
         opacity: 0; 
+        z-index: 1;
       }
     50% {
         transform: translate(0%, -80%) scale(0.1);
         opacity: 0;
+        z-index: 1;
       }
       100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 1;
       }
     }
   
@@ -138,14 +153,17 @@
     0% {
         transform: translate(-180%, -300%) scale(0.1);
         opacity: 0;
+        z-index: 0;
       }
     50% {
         transform: translate(-90%, -250%) scale(0.1);
         opacity: 0;
+        z-index: 0;
       }
       100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
+        z-index: 0;
       }
     }
   

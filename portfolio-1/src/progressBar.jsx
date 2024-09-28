@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-const ProgressBar = ({ strokeDashoffset, theme }) => {
+
+const ProgressBar = ({ strokeDashoffset, theme, imageSrc}) => {
   // Extracting the classes for easier use
   // bgClass = `text-${theme.bg}`;   // e.g., text-bg2
   // const darkClass = `text-${theme.dark}`; // e.g., text-dark2
@@ -28,13 +29,22 @@ const ProgressBar = ({ strokeDashoffset, theme }) => {
           strokeLinecap="round"
         />
       </svg>
+
+      {/* Image positioned at the center */}
+      {imageSrc && (
+        <div className="absolute inset-0 flex items-center justify-center">
+          <img src={imageSrc} alt="Progress icon" className="w-[50%] h-[50%] opacity-80" />
+        </div>
+         )}
     </div>
   );
 };
 
+
 ProgressBar.propTypes = {
   strokeDashoffset: PropTypes.string.isRequired,
-  theme: PropTypes.object.isRequired, // Ensure the theme prop is validated
+  theme: PropTypes.object.isRequired,
+  imageSrc: PropTypes.object.isRequired
 };
 
 export default ProgressBar;
