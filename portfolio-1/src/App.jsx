@@ -4,8 +4,8 @@ import './App.css';
 import './fonts.css';
 import './animation.css';
 import profilePhoto from './assets/profilePhoto.JPG';
-import ProgressBar from './ProgressBar';
-import ThemeButton from './ThemeButton';
+import ProgressBar from './progressBar.jsx';
+import ThemeButton from './themeButton.jsx';
 import c from './assets/icons/C.ico';
 import cpp from './assets/icons/C++.svg';
 import html from './assets/icons/HTML.svg'
