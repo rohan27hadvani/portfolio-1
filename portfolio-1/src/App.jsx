@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import React Router components
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import React Router components
+import { Link } from 'react-router-dom';
 
 import './App.css';
 import './fonts.css';
@@ -7,10 +8,11 @@ import './animation.css';
 import ProfilePhoto from './assets/profilePhoto.JPG';
 import ProgressBar from './progressBar.jsx';
 import ThemeButton from './themeButton.jsx';
+import Navbar from './Navbar.jsx'; // Import Navbar component
 
 import Projects from './Projects.jsx'; 
-import About from './About.jsx'
-import Contact from './Contact.jsx'
+import About from './About.jsx';
+import Contact from './Contact.jsx';
 
 import c from './assets/icons/C.ico';
 import cpp from './assets/icons/C++.svg';
@@ -76,48 +78,18 @@ function App() {
             <div className={`h-screen w-screen p-4 ${themeClasses[theme].bg}`}>
               <div className="w-full h-full">
                 <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
-                  <div className={`${themeClasses[theme].light} row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
-                    <div className='text-black flex gap-3 font-gilroy uppercase text-3xl justify-start pl-8 w-2/3 items-center hover:cursor-pointer'>
-                      <Link to="/" className='flex gap-3'>
-                      <div className='italic'>
-                        Rohan
-                      </div>
-                      <div className='font-semibold'>
-                        Hadvani
-                      </div>
-                      </Link>
-                    </div>
-                    <div className='w-1/3 flex items-center'>
-                      <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
-                        <li className='font-light hover:underline hover:cursor-pointer'>
-                          <Link to="/Projects">Projects</Link>
-                        </li>
-                        <li className='font-light hover:underline hover:cursor-pointer'>
-                          <Link to="/About">About</Link>
-                        </li>
-                        <li className='font-light hover:underline hover:cursor-pointer'>
-                          <Link to="/contact">Contact</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  {/* Navbar Start */}
+                  <Navbar theme={themeClasses[theme]} load={load} />
+                  {/* Navbar End */}
 
                   {/* Profile Section */}
                   <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
                     <div className='text-black font-gilroy text-xl w-full h-full'>
                       <div className='w-full h-full flex justify-end flex-grow flex-col gap-4 text-5xl pl-6 pb-[60px]'>
-                        <div className='font-bold'>
-                          Front-End Developer
-                        </div> 
-                        <div className='font-bold'>
-                          Thriving Author
-                        </div> 
-                        <div>
-                          Sports Enthusiast
-                        </div> 
-                        <div className='font-bold'>
-                          Curious Geroger
-                        </div> 
+                        <div className='font-bold'>Front-End Developer</div> 
+                        <div className='font-bold'>Thriving Author</div> 
+                        <div>Sports Enthusiast</div> 
+                        <div className='font-bold'>Curious Geroger</div> 
                       </div>
                     </div>
                   </div>
@@ -195,18 +167,14 @@ function App() {
                   <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
                     <div className='text-black font-gilroy w-full h-full'>
                       <div className='flex w-full h-4/5'>
-                        <div className='w-2/5 text-xl pl-6 pt-8'>
-                          Have some questions?
-                        </div>
+                        <div className='w-2/5 text-xl pl-6 pt-8'>Have some questions?</div>
                         <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                           <Link to="/Contact">
                             <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black'/>
                           </Link>
                         </div>
                       </div>
-                      <div className='h-1/5 text-5xl pl-6 pb-8'>
-                        Contact me
-                      </div>
+                      <div className='h-1/5 text-5xl pl-6 pb-8'>Contact me</div>
                     </div>
                   </div>
 
@@ -214,17 +182,17 @@ function App() {
                     <div className='w-full h-full flex items-center'>
                       <ul className='text-black flex justify-around uppercase w-full'>
                         <li>
-                          <a href="https://www.instagram.com/rohanhadvani/" target="_blank">
+                          <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
                             <img src={insta} alt="Instagram" className="h-12 w-12" />
                           </a>
                         </li>
                         <li>
-                          <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b153/" target='_blank'>
+                          <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b153/" target='_blank' rel="noopener noreferrer">
                             <img src={LI} alt="LinkedIn" className="h-14 w-14" />
                           </a>
                         </li>
                         <li className='font-light hover:underline'>
-                          <a href="https://github.com/rohan27hadvani" target='_blank'>
+                          <a href="https://github.com/rohan27hadvani" target='_blank' rel="noopener noreferrer">
                             <img src={GH} alt="GitHub" className="h-12 w-12" />
                           </a>
                         </li>

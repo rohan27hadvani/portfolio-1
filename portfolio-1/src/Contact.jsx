@@ -6,6 +6,7 @@ import './animation.css';
 import ProfilePhoto from './assets/profilePhoto.JPG';
 import ProgressBar from './progressBar.jsx';
 import ThemeButton from './themeButton.jsx';
+import Navbar from './Navbar.jsx';
 
 
 
@@ -69,31 +70,7 @@ function Contact() {
         <div className="w-full h-full">
           <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
           
-            <div className={`${themeClasses[theme].light} row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
-              <div className='text-black flex gap-3 font-gilroy uppercase text-3xl justify-start pl-8 w-2/3 items-center hover:underline hover:cursor-pointer'>
-                <a href="/">
-                <div className='italic'>
-                  Rohan
-                </div>
-                <div className='font-semibold'>
-                  Hadvani
-                </div>
-                </a>
-              </div>
-              <div className='w-1/3 flex items-center'>
-                <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
-                 <li className='font-light hover:underline hover:cursor-pointer'>
-                    Projects
-                  </li>
-                  <li className='font-light hover:underline hover:cursor-pointer'>
-                    About
-                  </li>
-                  <li className='font-light hover:underline hover:cursor-pointer'>
-                    Contact
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <Navbar theme={themeClasses[theme]} load={load} />
             
             <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
               <div className='text-black font-gilroy text-xl w-full h-full'>
