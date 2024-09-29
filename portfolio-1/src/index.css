@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .basic {
-  @apply flex text-white rounded-3xl hover:shadow-lg hover:scale-105 hover:shadow-gray-300
+  @apply flex text-white rounded-3xl hover:shadow-md hover:shadow-gray-400
     
 }
 
