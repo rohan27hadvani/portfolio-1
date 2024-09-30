@@ -166,6 +166,11 @@
         opacity: 0;
         z-index: 10;
       }
+    50% {
+        transform: translate(30%, 30%) scale(0.1);
+        opacity: 0;
+        z-index: 10;
+      }
     100% {
         transform: translate(0, 0) scale(1);
         opacity: 1;
@@ -179,7 +184,12 @@
 
     @keyframes divp1 { 
       0% {
-          transform: translate(200%, -60%) scale(0.1);
+          transform: translate(50%, -60%) scale(0.1);
+          opacity: 0;
+          z-index: 8;
+        }
+      30% {
+          transform: translate(50%, -60%) scale(0.1);
           opacity: 0;
           z-index: 8;
         }
@@ -191,13 +201,18 @@
       }
   
       .moving-p1 {
-        animation: divp1 1.35s ease forwards;
+        animation: divp1 1.4s ease forwards;
       }
       
 
       @keyframes divp2 { 
         0% {
-            transform: translate(100%, -60%) scale(0.1);
+            transform: translate(30%, -60%) scale(0);
+            opacity: 0;
+            z-index: 7;
+          }
+        30% {
+            transform: translate(300%, -60%) scale(0);
             opacity: 0;
             z-index: 7;
           }
@@ -209,13 +224,18 @@
         }
     
         .moving-p2 {
-          animation: divp2 1.5s ease forwards;
+          animation: divp2 1.6s ease forwards;
         }
       
 
         @keyframes divp3 { 
           0% {
-              transform: translate(10%, -60%) scale(0.1);
+              transform: translate(50%, -60%) scale(0);
+              opacity: 0;
+              z-index: 6;
+            }
+          30% {
+              transform: translate(50%, -60%) scale(0);
               opacity: 0;
               z-index: 6;
             }
@@ -227,55 +247,48 @@
         }
       
         .moving-p3 {
-            animation: divp3 1.75s ease forwards;
+            animation: divp3 1.8s ease forwards;
         }
           
         @keyframes divp4 { 
           0% {
-              transform: translate(200%, -150%) scale(0.1);
+              transform: translate(40%, -50%) scale(0);
               opacity: 0;
-              z-index: 8;
+              z-index: 5;
               }
-            100% {
+          30% {
+              transform: translate(40%, -50%) scale(0);
+              opacity: 0;
+              z-index: 5;
+              }
+          100% {
               transform: translate(0, 0) scale(1);
               opacity: 1;
-              z-index: 8;
+              z-index: 5;
               }
         }
         .moving-p4 {
-          animation: divp4 1.425s ease forwards;
+          animation: divp4 2s ease forwards;
         }
 
         @keyframes divp5 { 
           0% {
-              transform: translate(100%, -150%) scale(0.1);
+              transform: translate(60%, -50%) scale(0);
               opacity: 0;
-              z-index: 7;
+              z-index: 4;
+            }
+          30% {
+              transform: translate(600%, -50%) scale(0);
+              opacity: 0;
+              z-index: 4;
             }
           100% {
               transform: translate(0, 0) scale(1);
               opacity: 1;
-              z-index: 7;
+              z-index: 4;
             }
           }
       
           .moving-p5 {
-            animation: divp5 1.5s ease forwards;
-          }
-
-          @keyframes divp6 { 
-            0% {
-                transform: translate(10%, -150%) scale(0.1);
-                opacity: 0;
-                z-index: 6;
-              }
-            100% {
-                transform: translate(0, 0) scale(1);
-                opacity: 1;
-                z-index: 6;
-              }
-          }
-        
-          .moving-p6 {
-              animation: divp6 1.825s ease forwards;
+            animation: divp5 2.2s ease forwards;
           }
