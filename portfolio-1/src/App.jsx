@@ -8,7 +8,7 @@ import './animation.css';
 import ProfilePhoto from './assets/profilePhoto.JPG';
 import ProgressBar from './progressBar.jsx';
 import ThemeButton from './themeButton.jsx';
-import Navbar from './Navbar.jsx'; // Import Navbar component
+import Navbar from './Navbar.jsx';
 
 import Projects from './Projects.jsx'; 
 import About from './About.jsx';
@@ -34,8 +34,10 @@ import LI from './assets/icons/LinkedIn.svg';
 
 function App() {
   const [load, setLoad] = useState(false);
-  const [theme, setTheme] = useState('theme1');
-
+  const [theme, setTheme] = useState(() => {
+    // Check localStorage for theme on initial load
+    return localStorage.getItem('selectedTheme') || 'theme1';
+  });
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoad(true);
@@ -48,6 +50,7 @@ function App() {
 
   const handleThemeChange = (newTheme) => {
     setTheme(newTheme);
+    localStorage.setItem('selectedTheme', newTheme);  // Save theme to localStorage
   };
 
   const themeClasses = {
@@ -78,9 +81,10 @@ function App() {
             <div className={`h-screen w-screen p-4 ${themeClasses[theme].bg}`}>
               <div className="w-full h-full">
                 <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
-                  {/* Navbar Start */}
+
+
                   <Navbar theme={themeClasses[theme]} load={load} />
-                  {/* Navbar End */}
+
 
                   {/* Profile Section */}
                   <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
@@ -152,7 +156,6 @@ function App() {
                     </div>
                   </div>
 
-                  {/* Other Sections */}
                   <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
                     <div className='text-black font-gilroy font-light pl-6'>
                       <div className='flex align-top h-1/3 pt-8'>

@@ -2,9 +2,9 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ theme, load }) => {
+const Navbar = ({ theme, load, animationClass = 'moving-1' }) => {
   return (
-    <div className={`${theme.light} row-span-1 col-span-9 basic ${load ? 'moving-1' : ''}`}>
+    <div className={`${theme.light} row-span-1 col-span-9 basic ${load ? animationClass : ''}`}>
       <div className='text-black flex gap-3 font-gilroy uppercase text-3xl justify-start pl-8 w-2/3 items-center hover:cursor-pointer'>
         <Link to="/" className='flex gap-3'>
           <div className='italic'>Rohan</div>
@@ -30,10 +30,11 @@ const Navbar = ({ theme, load }) => {
 
 // Add prop types
 Navbar.propTypes = {
-    theme: PropTypes.shape({
-      light: PropTypes.string.isRequired,
-    }).isRequired,
-    load: PropTypes.bool.isRequired,
-  };
+  theme: PropTypes.shape({
+    light: PropTypes.string.isRequired,
+  }).isRequired,
+  load: PropTypes.bool.isRequired,
+  animationClass: PropTypes.string,  // New prop
+};
 
 export default Navbar;

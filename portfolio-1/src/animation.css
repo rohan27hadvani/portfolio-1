@@ -1,3 +1,6 @@
+/* Animations for App.jsx */
+
+
 @keyframes div1 {
     0% {
         transform: translate(0%, 30%) scale(0.1);
@@ -60,24 +63,6 @@
     }
   }
 
-  /* @keyframes div3 {
-    0% {
-      transform: translate(250%, 0%) scale(0.5);
-      z-index: 2;
-      opacity: 1;
-    }
-    50% {
-        transform: translate(250%, 30%) scale(1);
-        opacity: 1;
-        z-index: 2;
-      }
-    100% {
-      transform: translate(0, 0) scale(1);
-      opacity: 1;
-      z-index: 2;
-    }
-  } */
-  
   .moving-3 {
     animation: div3 1.5s ease forwards;
   }
@@ -170,3 +155,127 @@
   .moving-7 {
     animation: div7 3.2s ease forwards;
   }
+
+
+  /* Animations for Projects.jsx */
+
+  /* Projects Page Navbar */
+  @keyframes divpn { 
+    0% {
+        transform: translate(30%, 30%) scale(0.1);
+        opacity: 0;
+        z-index: 10;
+      }
+    100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        z-index: 10;
+      }
+    }
+
+    .moving-pn {
+      animation: divpn 1.2s ease forwards;
+    }
+
+    @keyframes divp1 { 
+      0% {
+          transform: translate(200%, -60%) scale(0.1);
+          opacity: 0;
+          z-index: 8;
+        }
+      100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 1;
+          z-index: 8;
+        }
+      }
+  
+      .moving-p1 {
+        animation: divp1 1.35s ease forwards;
+      }
+      
+
+      @keyframes divp2 { 
+        0% {
+            transform: translate(100%, -60%) scale(0.1);
+            opacity: 0;
+            z-index: 7;
+          }
+        100% {
+            transform: translate(0, 0) scale(1);
+            opacity: 1;
+            z-index: 7;
+          }
+        }
+    
+        .moving-p2 {
+          animation: divp2 1.5s ease forwards;
+        }
+      
+
+        @keyframes divp3 { 
+          0% {
+              transform: translate(10%, -60%) scale(0.1);
+              opacity: 0;
+              z-index: 6;
+            }
+          100% {
+              transform: translate(0, 0) scale(1);
+              opacity: 1;
+              z-index: 6;
+            }
+        }
+      
+        .moving-p3 {
+            animation: divp3 1.75s ease forwards;
+        }
+          
+        @keyframes divp4 { 
+          0% {
+              transform: translate(200%, -150%) scale(0.1);
+              opacity: 0;
+              z-index: 8;
+              }
+            100% {
+              transform: translate(0, 0) scale(1);
+              opacity: 1;
+              z-index: 8;
+              }
+        }
+        .moving-p4 {
+          animation: divp4 1.425s ease forwards;
+        }
+
+        @keyframes divp5 { 
+          0% {
+              transform: translate(100%, -150%) scale(0.1);
+              opacity: 0;
+              z-index: 7;
+            }
+          100% {
+              transform: translate(0, 0) scale(1);
+              opacity: 1;
+              z-index: 7;
+            }
+          }
+      
+          .moving-p5 {
+            animation: divp5 1.5s ease forwards;
+          }
+
+          @keyframes divp6 { 
+            0% {
+                transform: translate(10%, -150%) scale(0.1);
+                opacity: 0;
+                z-index: 6;
+              }
+            100% {
+                transform: translate(0, 0) scale(1);
+                opacity: 1;
+                z-index: 6;
+              }
+          }
+        
+          .moving-p6 {
+              animation: divp6 1.825s ease forwards;
+          }
