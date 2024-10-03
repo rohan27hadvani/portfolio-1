@@ -53,15 +53,17 @@ function Projects() {
         <div className={`${themeClasses[theme].light} row-span-3 col-span-5 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+              <div className='w-3/5 text-3xl font-semibold pl-6 pt-8'>
+                Library Management System
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
+                <a href="https://github.com/rohan27hadvani/SVIT-LMS">
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-1/3 text-2xl px-6'>
+              Created a Android App with Java. Used Firebase for Google Authentication for Creating an Account. Fully Functional for Admins and Students.
             </div>
           </div>
         </div>
@@ -69,15 +71,17 @@ function Projects() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+              <div className='w-3/5 text-3xl pl-6 font-semibold pt-8'>
+                Ticketing App/ Jira Clone
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
+                <a href="https://github.com/rohan27hadvani/ticketing-app" target='_blank'>
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-1/3 text-2xl px-6'>
+              Fully functional ticketing app made with Next.js, Tailwind CSS and MongoDB. Used Mongoose library to connect my app to Atlas Database.
             </div>
           </div>
         </div>
@@ -85,15 +89,17 @@ function Projects() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+              <div className='w-3/5 text-3xl font-semibold pl-6 pt-8'>
+                Blackjack Game
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
+                <a href="https://github.com/rohan27hadvani/Blackjack-Game">
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-1/3 text-2xl px-6'>
+              Created a Fun Blackjack game with the help of JavaScript and CSS. 
             </div>
           </div>
         </div>
@@ -101,15 +107,17 @@ function Projects() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+              <div className='w-3/5 text-3xl font-semibold pl-6 pt-8'>
+                Private Bookmark Chrome Extention
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
+                <a href="https://github.com/rohan27hadvani/Private-Bookmark-Chrome-Ext">
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-1/3 text-2xl px-6'>
+              Used JavaScript with CSS to create a Chrome Extention for storing URLs locally on you machine. 
             </div>
           </div>
         </div>
@@ -117,15 +125,17 @@ function Projects() {
         <div className={`${themeClasses[theme].light} row-span-3 col-span-4 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+              <div className='w-3/5 text-3xl font-semibold pl-6 pt-8'>
+                Basic React Counter App
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
+                <a href="https://github.com/rohan27hadvani/React-Counter-App/tree/main">
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-1/3 text-2xl px-6'>
+              Used React with CSS to create a Counter used to increment as well as decrement a number.
             </div>
           </div>
         </div>

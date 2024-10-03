@@ -16,13 +16,13 @@ const Navbar = ({ theme, load, animationClass = 'moving-1' }) => {
       </div>
       <div className='w-1/3 flex items-center'>
         <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
-          <li className='font-light hover:underline hover:cursor-pointer'>
+          <li className='font-light hover:font-semibold hover:underline hover:cursor-pointer'>
             <Link to="/Projects">Projects</Link>
           </li>
-          <li className='font-light hover:underline hover:cursor-pointer'>
+          <li className='font-light hover:font-semibold hover:underline hover:cursor-pointer'>
             <Link to="/About">About</Link>
           </li>
-          <li className='font-light hover:underline hover:cursor-pointer'>
+          <li className='font-light hover:font-semibold hover:underline hover:cursor-pointer'>
             <Link to="/Contact">Contact</Link>
           </li>
         </ul>

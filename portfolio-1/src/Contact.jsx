@@ -53,14 +53,14 @@ function Contact() {
         <div className={`${themeClasses[theme].light} row-span-3 col-span-5 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
+              <div className='w-2/5 text-4xl pl-6 pt-8'>
                 Have some questions?
               </div>
               <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
+            <div className='h-1/3 text-2xl pl-6'>
               Contact me
             </div>
           </div>
@@ -69,14 +69,14 @@ function Contact() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
+              <div className='w-2/5 text-4xl pl-6 pt-8'>
                 Have some questions?
               </div>
               <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
+            <div className='h-1/3 text-2xl pl-6'>
               Contact me
             </div>
           </div>
@@ -85,14 +85,14 @@ function Contact() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
+              <div className='w-2/5 text-4xl pl-6 pt-8'>
                 Have some questions?
               </div>
               <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
+            <div className='h-1/3 text-2xl pl-6'>
               Contact me
             </div>
           </div>
@@ -101,14 +101,14 @@ function Contact() {
         <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
+              <div className='w-2/5 text-4xl pl-6 pt-8'>
                 Have some questions?
               </div>
               <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
+            <div className='h-1/3 text-2xl pl-6'>
               Contact me
             </div>
           </div>
@@ -117,14 +117,14 @@ function Contact() {
         <div className={`${themeClasses[theme].light} row-span-3 col-span-4 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
+              <div className='w-3/5 text-4xl pl-6 pt-8'>
                 Have some questions?
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
+              <div className='w-2/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
+            <div className='h-1/3 text-2xl pl-6'>
               Contact me
             </div>
           </div>

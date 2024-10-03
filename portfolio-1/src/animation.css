@@ -212,7 +212,7 @@
   }
 
   .moving-pn {
-      animation: divpn 1.5s ease forwards;
+      animation: divpn 0.75s ease forwards;
   }
 
 @keyframes divp1 { 
@@ -234,7 +234,7 @@
   }
   
   .moving-p1 {
-    animation: divp1 1.75s ease forwards;
+    animation: divp1 1s ease forwards;
   }
       
 
@@ -257,7 +257,7 @@
    }
     
   .moving-p2 {
-     animation: divp2 2s ease forwards;
+     animation: divp2 1.2s ease forwards;
    }
       
 
@@ -280,7 +280,7 @@
         }
       
         .moving-p3 {
-            animation: divp3 2.2s ease forwards;
+            animation: divp3 1.4s ease forwards;
         }
           
         @keyframes divp4 { 
@@ -301,7 +301,7 @@
               }
         }
         .moving-p4 {
-          animation: divp4 2.4s ease forwards;
+          animation: divp4 1.7s ease forwards;
         }
 
 @keyframes divp5 { 
@@ -323,5 +323,5 @@
   }
       
   .moving-p5 {
-  animation: divp5 2.6s ease forwards;
+  animation: divp5 2s ease forwards;
   }
