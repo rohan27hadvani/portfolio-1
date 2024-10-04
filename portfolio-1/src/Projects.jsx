@@ -57,7 +57,7 @@ function Projects() {
                 Library Management System
               </div>
               <div className='w-2/5 pr-6 pt-8 flex justify-end'>
-                <a href="https://github.com/rohan27hadvani/SVIT-LMS">
+                <a href="https://github.com/rohan27hadvani/SVIT-LMS" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
@@ -93,7 +93,7 @@ function Projects() {
                 Blackjack Game
               </div>
               <div className='w-2/5 pr-6 pt-8 flex justify-end'>
-                <a href="https://github.com/rohan27hadvani/Blackjack-Game">
+                <a href="https://github.com/rohan27hadvani/Blackjack-Game" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
@@ -111,7 +111,7 @@ function Projects() {
                 Private Bookmark Chrome Extention
               </div>
               <div className='w-2/5 pr-6 pt-8 flex justify-end'>
-                <a href="https://github.com/rohan27hadvani/Private-Bookmark-Chrome-Ext">
+                <a href="https://github.com/rohan27hadvani/Private-Bookmark-Chrome-Ext" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
@@ -129,7 +129,7 @@ function Projects() {
                 Basic React Counter App
               </div>
               <div className='w-2/5 pr-6 pt-8 flex justify-end'>
-                <a href="https://github.com/rohan27hadvani/React-Counter-App/tree/main">
+                <a href="https://github.com/rohan27hadvani/React-Counter-App/tree/main" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>

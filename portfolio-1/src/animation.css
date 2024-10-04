@@ -41,82 +41,81 @@
 
 
 @keyframes div2 {
-    0% {
-        transform: translate(40%, 0%) scale(0.1);
-        opacity: 0;
-        z-index: 4;
-      }
-    40% {
-        transform: translate(40%, 0%) scale(0.1);
-        opacity: 0;
-        z-index: 4;
-      }
-      100% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-        z-index: 4;
-      }
-    }
-  
-  .moving-2 {
-    animation: div2 2.5s ease forwards;
+0% {
+    transform: translate(40%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
+   }
+40% {
+    transform: translate(40%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
   }
+  100% {
+     transform: translate(0, 0) scale(1);
+     opacity: 1;
+     z-index: 4;
+  }
+}
+  
+.moving-2 {
+  animation: div2 2.5s ease forwards;
+}
 
-  @keyframes div2e {
-    0% {
-      transform: translate(0%, 0%) scale(1);
-      opacity: 1;
-    }
-  
-    100% {
-      transform: translate(0%, 100%) scale(0.1);
-      opacity: 0;
-    }
+@keyframes div2e {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
   }
   
-  .exiting-2 {
-    animation: div2e 0.8s ease forwards;
+  100% {
+    transform: translate(0%, 100%) scale(0.1);
+    opacity: 0;
   }
+}
+  
+.exiting-2 {
+  animation: div2e 0.8s ease forwards;
+}
 
 @keyframes div3 {
-    0% {
-      transform: translate(-30%, 0%) scale(0.5);
-      opacity: 1;
-      z-index: 10;
-    }
-    50% {
-        transform: translate(-30%, 30%) scale(1);
-        opacity: 1;
-        z-index: 10;
-      }
-    100% {
-      transform: translate(0, 0) scale(1);
-      opacity: 1;
-      z-index: 10;
-    }
+0% {
+  transform: translate(-30%, 0%) scale(0.5);
+  opacity: 1;
+  z-index: 10;
+}
+50% {
+  transform: translate(-30%, 30%) scale(1);
+  opacity: 1;
+  z-index: 10;
   }
+100% {
+  transform: translate(0, 0) scale(1);
+  opacity: 1;
+  z-index: 10;
+}}
 
-  .moving-3 {
-    animation: div3 1.5s ease forwards;
-  }
+.moving-3 {
+  animation: div3 1.5s ease forwards;
+}
 
 @keyframes div4 {
-  0% {
-        transform: translate(-30%, 0%) scale(0.1);
-        opacity: 0;
-        z-index: 3;
-      }
-  50% {
-        transform: translate(-30%, 0%) scale(0.1);
-        opacity: 0;
-        z-index: 3;
-      }
-  100% {
-        transform: translate(0, 0) scale(1);
-        opacity: 1;
-        z-index: 3;
-      }
+0% {
+    transform: translate(-30%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 3;
     }
+50% {
+    transform: translate(-30%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 3;
+    }
+100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    z-index: 3;
+    }
+}
   
   .moving-4 {
     animation: div4 2.6s ease forwards;
@@ -325,3 +324,12 @@
   .moving-p5 {
   animation: divp5 2s ease forwards;
   }
+
+/* Animation for About Page */
+
+
+
+
+
+/* Animation for Contact Page */
+
