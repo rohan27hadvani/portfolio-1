@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import carrow from './assets/icons/carrow.svg';
+// import carrow from './assets/icons/carrow.svg';
 import './App.css';
 import './fonts.css';
 import './animation.css';
