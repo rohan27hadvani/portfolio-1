@@ -50,7 +50,7 @@ function About() {
     <div className={`row-span-7 col-span-9 ${themeClasses[theme].bg}`}>
 
       <div className="w-full h-full grid grid-rows-7 grid-cols-9 gap-4 box-border">
-        <div className={`${themeClasses[theme].light} row-span-3 col-span-5 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-4 col-span-5 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
               <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -82,7 +82,7 @@ function About() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
               <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -98,7 +98,7 @@ function About() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        {/* <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
               <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -112,9 +112,9 @@ function About() {
               Contact me
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className={`${themeClasses[theme].light} row-span-3 col-span-4 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-3 col-span-6 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex w-full h-2/3'>
               <div className='w-2/5 text-xl pl-6 pt-8'>
@@ -133,5 +133,9 @@ function About() {
     </div>
   );
 }
+
+// Book
+// Frontend
+
 
 export default About;

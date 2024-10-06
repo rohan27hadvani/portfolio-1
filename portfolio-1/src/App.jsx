@@ -101,9 +101,9 @@ function App() {
                     </div>
 
                     {/* Skills Progress Bars */}
-                    <div className={`${themeClasses[theme].light} row-span-6 h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
-                      <div className='flex flex-row justify-around w-full h-5/6'>
-                        <div className='progressBar justify-around w-full h-full'>
+                    <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
+                      <div className='w-full h-5/6 flex flex-row align-top bg-green-400'>
+                        <div className='progressBar'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
