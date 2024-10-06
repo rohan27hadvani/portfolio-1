@@ -102,7 +102,7 @@ function App() {
 
                     {/* Skills Progress Bars */}
                     <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
-                      <div className='w-full h-5/6 flex flex-row align-top bg-green-400'>
+                      <div className='w-full h-5/6 flex flex-row align-top'>
                         <div className='progressBar'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
@@ -178,7 +178,7 @@ function App() {
 
                     <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}`}>
                       <div className='w-full h-full flex items-center'>
-                        <ul className='text-black flex justify-around uppercase w-full'>
+                        <ul className='text-black flex items-center justify-around w-full'>
                           <li>
                             <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
                               <img src={insta} alt="Instagram" className="h-12 w-12" />
@@ -186,12 +186,12 @@ function App() {
                           </li>
                           <li>
                             <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b229/" target="_blank" rel="noopener noreferrer">
-                              <img src={LI} alt="LinkedIn" className="h-12 w-12" />
+                              <img src={LI} alt="LinkedIn" className="h-[74px] w-[74px]" />
                             </a>
                           </li>
                           <li className='font-light hover:underline'>
                             <a href="https://github.com/rohan27hadvani" target='_blank' rel="noopener noreferrer">
-                              <img src={GH} alt="GitHub" className="h-12 w-12" />
+                              <img src={GH} alt="GitHub" className="h-14 w-14" />
                             </a>
                           </li>
                         </ul>

@@ -12,7 +12,7 @@
 }
 
 .progressBar {
-  @apply flex flex-col w-full h-full scale-[0.80] items-center gap-y-8 -mt-11
+  @apply flex flex-col w-full h-full scale-[0.80] items-center gap-y-8 -mt-6
 }
 
 /* .hideContent {
