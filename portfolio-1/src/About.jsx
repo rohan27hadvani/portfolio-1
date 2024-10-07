@@ -73,7 +73,7 @@ function About() {
               Experience
             </div>
             
-            <div className='h-[90%]'>
+            <div className='h-[90%] -m-1'>
             <div className="relative pl-8 sm:pl-32 pt-6 group">
               <div className="font-semibold text-2xl uppercase mb-1 sm:mb-0">
                 WriteSpace Infotech Private Limited
@@ -86,11 +86,11 @@ function About() {
                   SDE-2
                 </div>
               </div>
-              <div className="text-black text-lg">
+              <div className="text-black">
                 <div className='pt-2 font-semibold text-xl'>
                 KINC Mineral Technologies Pvt Ltd:-
                 </div>
-                <div className='pt-2 text-xl'>
+                <div className='text-md'>
                 I am developing an internal system to replace SAP, with modules for procurement, payroll (Axis Bank API), billing, and staff management.
                 </div>
               </div>
@@ -107,11 +107,11 @@ function About() {
                 </div>
               </div>
               
-              <div className="text-black text-lg">
+              <div className="text-black">
               <div className='pt-2 font-semibold text-xl'>
                 Delta 9 Adventures:-   
               </div>
-              <div className='pt-2 text-xl'>
+              <div className='text-md'>
               I built an online turf booking system using Google Calendar and Google Pay, now expanding to include more sports and maintenance scheduling.
               </div>
               </div>
@@ -140,7 +140,7 @@ function About() {
                   Software Developer Intern
                 </div>
               </div>
-              <div className="pt-2 text-black text-xl">
+              <div className="text-black text-md">
               Developed the full frontend, migrated from React to Next for better SEO, improved UI to boost traffic by 83%, made it mobile-friendly, and implemented Firebase for 3rd-party authentication.
 
                 </div>
