@@ -152,11 +152,11 @@ function App() {
                     </div>
 
                     <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
-                      <div className='text-black font-gilroy font-light pl-6'>
+                      <div className='text-black font-gilroy font-light px-6'>
                         <div className='flex align-top h-1/3 pt-8'>
                           <img src={circle} alt="" className='h-1/2'/>
                         </div>
-                        <section className='flex items-end h-2/3 w-5/6 text-[20px] pb-8'>
+                        <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I’m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
                         </section>
                       </div>

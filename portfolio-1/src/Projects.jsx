@@ -62,7 +62,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6'>
+            <div className='h-1/3 text-2xl px-6 text-justify'>
               Created a Android App with Java. Used Firebase for Google Authentication for Creating an Account. Fully Functional for Admins and Students.
             </div>
           </div>
@@ -80,7 +80,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6'>
+            <div className='h-1/3 text-2xl px-6 text-justify'>
               Fully functional ticketing app made with Next.js, Tailwind CSS and MongoDB. Used Mongoose library to connect my app to Atlas Database.
             </div>
           </div>
@@ -98,7 +98,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6'>
+            <div className='h-1/3 text-2xl px-6 text-justify'>
               Created a Fun Blackjack game with the help of JavaScript and CSS. 
             </div>
           </div>
@@ -116,7 +116,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6'>
+            <div className='h-1/3 text-2xl px-6 text-justify'>
               Used JavaScript with CSS to create a Chrome Extention for storing URLs locally on you machine. 
             </div>
           </div>
@@ -134,7 +134,7 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6'>
+            <div className='h-1/3 text-2xl px-6 text-justify'>
               Used React with CSS to create a Counter used to increment as well as decrement a number.
             </div>
           </div>
