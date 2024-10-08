@@ -90,7 +90,7 @@ function About() {
                 <div className='pt-2 font-semibold text-xl'>
                 KINC Mineral Technologies Pvt Ltd:-
                 </div>
-                <div className='text-md'>
+                <div className='text-md text-justify pr-6'>
                 I am developing an internal system to replace SAP, with modules for procurement, payroll (Axis Bank API), billing, and staff management.
                 </div>
               </div>
@@ -111,7 +111,7 @@ function About() {
               <div className='pt-2 font-semibold text-xl'>
                 Delta 9 Adventures:-   
               </div>
-              <div className='text-md'>
+              <div className='text-md text-justify pr-6'>
               I built an online turf booking system using Google Calendar and Google Pay, now expanding to include more sports and maintenance scheduling.
               </div>
               </div>
@@ -129,7 +129,7 @@ function About() {
 
 
             <div className="relative pl-8 sm:pl-32 pt-6 group">
-              <div className="font-semibold text-2xl uppercase mb-1 sm:mb-0">
+              <div className="font-semibold text-2xl uppercase mb-1 pt-6 sm:mb-0">
                 WriteSpace
               </div>
               <div className="pt-3 flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-[80%] before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-black after:border-4 after:box-content after:white after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
@@ -140,7 +140,7 @@ function About() {
                   Software Developer Intern
                 </div>
               </div>
-              <div className="text-black text-md">
+              <div className="text-black text-md text-justify pr-6">
               Developed the full frontend, migrated from React to Next for better SEO, improved UI to boost traffic by 83%, made it mobile-friendly, and implemented Firebase for 3rd-party authentication.
 
                 </div>
@@ -162,16 +162,16 @@ function About() {
 
         <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
+            <div className='flex w-full h-1/3'>
+              <div className='w-4/5 text-5xl pl-6 pt-8'>
+                My Amazon Author Page!
               </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
+              <div className='w-1/5 pr-6 pt-8 flex justify-end'>
                 <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
               </div>
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+            <div className='h-2/3 text-[21px] text-justify px-6'>
+            When I&apos;m not immersed in coding or crafting sleek, dynamic websites, you&apos;ll likely find me lost in the world of words. Writing has always been my creative escape, and so far, I&apos;ve published three books. Two of them belong to my ongoing series, Destiny of the Night, while the third is a standalone novella titled Heaven & Earth. Whether it&apos;s bringing characters to life or building captivating plots, storytelling is another way I explore my passion for creating.
             </div>
           </div>
         </div>
@@ -179,18 +179,36 @@ function About() {
 
 
         <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3'>
-              <div className='w-2/5 text-xl pl-6 pt-8'>
-                Have some questions?
-              </div>
-              <div className='w-3/5 pr-6 pt-8 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
-              </div>
+          <div className='text-black font-gilroy w-5/6 h-full pl-6'>
+            <div className='w-full h-[15%] text-5xl  pt-8'>
+              Education
             </div>
-            <div className='h-1/3 text-5xl pl-6'>
-              Contact me
+
+            <div className='flex h-[85%] pb-8 flex-col justify-end'>
+              <div className='w-full pt-4'>
+                <div className='font-semibold text-3xl'>
+                  College:-
+                </div>
+                <div className='text-2xl pl-4 pt-2'>
+                  Sardar Vallabhbhai Institute of Technology, Vasad
+                </div>
+                <div className='text-2xl pl-4 pt-2'>
+                  (Affiliated with Gujarat Technological University)
+                </div>
+              </div>
+
+              <div className='w-full pt-4'>
+                <div className='font-semibold text-3xl'>
+                  Grade:-
+                </div>
+                <div className='text-2xl pl-4 pt-2'>
+                  8.29 CGPA
+                </div>
+              
             </div>
+            </div>
+
+
           </div>
         </div>
       </div>

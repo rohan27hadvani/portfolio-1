@@ -15,9 +15,6 @@
   @apply flex flex-col w-full h-full scale-[0.80] items-center gap-y-8 -mt-6
 }
 
-/* .hideContent {
-  @apply 
-} */
 
 .dark1 {
   color: #F8AFA6;
