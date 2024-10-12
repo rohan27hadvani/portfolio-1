@@ -25,13 +25,14 @@ import tw from './assets/icons/Tailwind.svg';
 import py from './assets/icons/Python.svg';
 import nxt from './assets/icons/Next.svg';
 import node from './assets/icons/Node.svg';
-import dnet from './assets/icons/Dotnet.svg';
+// import dnet from './assets/icons/Dotnet.svg';
 import react from './assets/icons/React.svg';
 import carrow from './assets/icons/carrow.svg';
 import circle from './assets/icons/Random Circle.svg';
 import GH from './assets/icons/GitHub.svg';
 import insta from './assets/icons/Insta.svg';
 import LI from './assets/icons/LinkedIn.svg';
+import aStudio from './assets/icons/AStudio.svg'
 
 function App() {
   const [load, setLoad] = useState(false);
@@ -83,12 +84,12 @@ function App() {
                   <>
                     {/* Profile Section */}
                     <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
-                      <div className='text-black font-gilroy text-xl w-full h-full'>
-                        <div className='w-full h-full flex justify-end flex-grow flex-col gap-4 text-5xl pl-6 pb-[60px]'>
-                          <div className='font-bold'>Front-End Developer</div> 
-                          <div className='font-bold'>Thriving Author</div> 
-                          <div>Sports Enthusiast</div> 
-                          <div className='font-bold'>Curious Geroger</div> 
+                      <div className='text-black font-gilroy w-full h-full'>
+                        <div className='w-full h-full flex justify-end flex-grow flex-col gap-4 laptop:gap-2 laptop:pb-[30px] text-5xl pl-6 pb-[60px]'>
+                          <div className='font-bold laptop:scale-90 laptop:-ml-5'>Front-End Developer</div> 
+                          <div className='font-bold laptop:scale-90 laptop:-ml-5'>Thriving Author</div> 
+                          <div className='laptop:scale-90 laptop:-ml-5'>Sports Enthusiast</div> 
+                          <div className='font-bold laptop:scale-90 laptop:-ml-5'>Curious Geroger</div> 
                         </div>
                       </div>
                     </div>
@@ -102,8 +103,8 @@ function App() {
 
                     {/* Skills Progress Bars */}
                     <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
-                      <div className='w-full h-5/6 flex flex-row align-top'>
-                        <div className='progressBar'>
+                      <div className='w-full h-5/6 flex flex-row align-top screen14:scale-[0.88] desktop:scale-[0.85] desktop:-ml-8 desktop:-mt-6 laptop:scale-[0.66] laptop:-mt-[60px] laptop:-ml-[55px]'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
@@ -117,7 +118,7 @@ function App() {
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
                           </div>
                         </div>
-                        <div className='progressBar'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -131,12 +132,12 @@ function App() {
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
                           </div>
                         </div>
-                        <div className='progressBar'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px]'>
                           <div>
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={dnet}/>
+                            <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={aStudio}/>
                           </div>
                           <div>
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={node}/>
@@ -146,17 +147,17 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy'>
+                      <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy screen14:mt-6  laptop:mt-8'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
                     </div>
 
                     <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
                       <div className='text-black font-gilroy font-light px-6'>
-                        <div className='flex align-top h-1/3 pt-8'>
+                        <div className='flex align-top h-1/3 pt-8 desktop:scale-95 desktop:-ml-2 laptop:scale-90 laptop:-ml-4'>
                           <img src={circle} alt="" className='h-1/2'/>
                         </div>
-                        <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify'>
+                        <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify desktop:scale-[0.98] laptop:text-[17px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I’m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
                         </section>
                       </div>
@@ -165,19 +166,19 @@ function App() {
                     <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
                       <div className='text-black font-gilroy w-full h-full'>
                         <div className='flex w-full h-4/5'>
-                          <div className='w-2/5 text-xl pl-6 pt-8'>Have some questions?</div>
+                          <div className='w-2/5 text-xl pl-6 pt-8 laptop:text-[20px]'>Have some questions?</div>
                           <div className='w-3/5 pr-6 pt-8 flex justify-end'>
                             <Link to="/Contact">
-                              <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black'/>
+                              <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black laptop:scale-90'/>
                             </Link>
                           </div>
                         </div>
-                        <div className='h-1/5 text-5xl pl-6 pb-8'>Contact me</div>
+                        <div className='h-1/5 text-5xl pl-6 pb-8 laptop:scale-90 laptop:-ml-4'>Contact me</div>
                       </div>
                     </div>
 
                     <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}`}>
-                      <div className='w-full h-full flex items-center'>
+                      <div className='w-full h-full flex items-center laptop:scale-[0.90]'>
                         <ul className='text-black flex items-center justify-around w-full'>
                           <li>
                             <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
