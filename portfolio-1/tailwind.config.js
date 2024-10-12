@@ -16,6 +16,8 @@ export default {
       // Done
       'screen14': '1440px',
       // Done 
+      'screen16': '1695px'
+      // Done
     },
 
     extend: {
