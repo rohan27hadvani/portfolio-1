@@ -5,19 +5,6 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    screens: {
-      'tablet': '768px',
-
-      'laptop': '1024px',
-
-      'desktop': '1280px',
-    
-      'screen14': '1440px',
-      
-      'screen16': '1695px'
-    
-    },
-
     extend: {
       colors: {
         'dark1': '#F8AFA6',
@@ -34,6 +21,18 @@ export default {
       },
       fontFamily: {
         gilroy: ['Gilroy', 'mono'],
+      },
+      screens: {
+        'tablet': '768px',
+  
+        'laptop': '1024px',
+  
+        'desktop': '1280px',
+      
+        'screen14': '1440px',
+        
+        // 'screen16': '1695px'
+      
       },
     },
   },

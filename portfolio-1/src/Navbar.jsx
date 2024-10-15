@@ -13,9 +13,9 @@ const Navbar = ({ theme, load, animationClass = 'moving-1' }) => {
           <div className='font-semibold'>Hadvani</div>
         </NavLink>
       </div>
-      <div className='w-1/3 flex items-center pr-6'>
+      <div className='w-1/3 flex items-center pr-2'>
         <ul className='text-black flex justify-around font-gilroy uppercase text-2xl w-full'>
-          <li className='font-light font hover:font-bold hover:underline hover:cursor-pointer 
+          <li className='font-light font hover:font-bold hover:underline hover:cursor-pointer
           
           tablet:text-[16px] laptop:text-xl desktop:text-2xl screen14:text-[28px]'>
             <NavLink to="/Projects" className={({ isActive }) => (isActive ? 'font-semibold' : '')}>
@@ -29,8 +29,7 @@ const Navbar = ({ theme, load, animationClass = 'moving-1' }) => {
               About
             </NavLink>
           </li>
-          <li className='font-light hover:font-bold hover:underline hover:cursor-pointer 
-          
+          <li className='font-light hover:font-bold hover:underline hover:cursor-pointer
           tablet:text-[16px] laptop:text-xl desktop:text-2xl screen14:text-[28px]'>
             <NavLink to="/Contact" className={({ isActive }) => (isActive ? 'font-semibold' : '')}>
               Contact

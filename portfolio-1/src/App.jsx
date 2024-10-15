@@ -168,7 +168,7 @@ function App() {
                       </div>
                       <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy 
                       
-                      screen14:mt-[20px] screen16:mt-[70px] screen16:scale-125 desktop:mt-12 laptop:mt-8 laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:scale-125'>
+                      screen14:mt-[20px] screen16:mt-[70px] screen16:text-3xl desktop:mt-12 laptop:mt-8 laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
                     </div>
