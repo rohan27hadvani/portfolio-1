@@ -72,9 +72,11 @@ function App() {
   return (
     <Router>
       {/* Home Page */}
-      <div className={`h-screen w-screen p-4 ${themeClasses[theme].bg}`}>
+      <div className={`mobile:h-full mobile:w-full tablet:h-screen tablet:w-screen p-4 ${themeClasses[theme].bg}`}>
         <div className="w-full h-full">
-          <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4">
+          <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4 
+          
+          mobile:inline-block tablet:grid laptop:grid desktop:grid screen14:grid screen16:grid">
             <Navbar theme={themeClasses[theme]} load={load} />
             <Routes>
               <Route
@@ -82,29 +84,31 @@ function App() {
                 element={
                   <>
                     {/* Profile Section */}
-                    <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
+                    <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 `}>
                       <div className='text-black font-gilroy w-full h-full'>
-                        <div className='w-full h-full flex justify-end flex-col gap-4 text-5xl pl-6 pb-[60px] 
+                        <div className='w-full h-full flex justify-end flex-col gap-4 text-5xl
                         
-                        tablet:pb-6 laptop:gap-3 desktop:gap-2 screen14:gap-4'>
+                        mobile:pb-2 mobile:pt-8 mobile:gap-0 mobile:pl-4 tablet:pl-6 tablet:pb-6 laptop:gap-3 desktop:gap-2 screen14:gap-4'>
                           <div className='font-bold 
                           
-                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                          mobile:text-3xl tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
                             Front-End Developer
                           </div> 
                           <div className='font-bold 
                           
-                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                          mobile:text-3xl tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
                             Thriving Author
                           </div> 
                           <div className='
                           
-                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                          mobile:text-3xl tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
                             Sports Enthusiast
                           </div> 
                           <div className='font-bold 
                           
-                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                          mobile:text-3xl tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
                             Curious Geroger
                           </div> 
                         </div>
@@ -112,15 +116,21 @@ function App() {
                     </div>
 
                     {/* Profile Photo */}
-                    <div className={`box-1-image row-span-4 col-span-2 basic ${load ? 'moving-3' : ''}`}>
-                      <div className='w-full h-full'>
+                    <div className={`box-1-image row-span-4 col-span-2 basic ${load ? 'moving-3' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 `}>
+                      <div className='mobile:w-full mobile:h-[500px] tablet:w-full tablet:h-full'>
                         <img className='rounded-3xl object-cover w-full h-full' src={ProfilePhoto} alt="Profile Photo"/>
                       </div>
                     </div>
 
                     {/* Skills Progress Bars */}
-                    <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
+                    <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 mobile:h-[600px] tablet:h-full`}>
                       <div className='w-full h-5/6 flex flex-row align-top justify-center
+                      
+                      mobile:scale-[0.7] mobile:-mt-[45px]
                       
                       screen14:scale-[0.80] screen14:-mt-12 screen14:gap-x-4 screen16:scale-100 screen16:mt-3 desktop:scale-[0.8] desktop:-mt-10 laptop:scale-[0.6] laptop:-mt-[60px] tablet:-mt-[95px] tablet:scale-[0.45]'>
                         <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
@@ -168,25 +178,38 @@ function App() {
                       </div>
                       <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy 
                       
-                      screen14:mt-[20px] screen16:mt-[70px] screen16:text-3xl desktop:mt-12 laptop:mt-8 laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
+                      mobile:mt-10
+                      
+                      screen14:mt-12 screen16:mt-[70px] screen16:text-3xl desktop:mt-4 laptop:mt-[60px] laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
                     </div>
 
-                    <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}`}> 
+                    <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 mobile:h-[350px]
+                    tablet:h-full tablet:w-full`}> 
                       <div className='text-black font-gilroy font-light px-6'>
-                        <div className='flex align-top h-1/3 pt-8 desktop:scale-95 desktop:-ml-2 laptop:scale-90 laptop:-ml-4 screen16:scale-110 screen16:ml-7 tablet:pt-6'>
+                        <div className='flex align-top h-1/3 pt-8 
+                        
+                        mobile:scale-[0.8] mobile:-ml-[40px] mobile:-mt-4
+
+                        desktop:scale-95 desktop:-ml-2 laptop:scale-90 laptop:-ml-4 screen16:scale-110 screen16:ml-7 tablet:pt-6 tablet:-ml-[20px] tablet:mt-1'>
                           <img src={circle} alt="" className='h-1/2'/>
                         </div>
                         <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify 
                         
-                        laptop:text-[17px] desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
+                        mobile:mt-2
+                        
+                        laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
                         </section>
                       </div>
                     </div>
 
-                    <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
+                    <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 `}>
                       <div className='text-black font-gilroy w-full h-full'>
                         <div className='flex w-full h-3/5'>
                           <div className='w-2/5 text-xl pl-6 pt-8 
@@ -202,11 +225,13 @@ function App() {
                         </div>
                         <div className='h-2/5 flex justify-end flex-col text-5xl pl-6 pb-8 
                         
-                        tablet:text-3xl tablet:pb-6 laptop:text-4xl screen16:text-6xl'>Contact me</div>
+                        mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-4xl screen16:text-6xl'>Contact me</div>
                       </div>
                     </div>
 
-                    <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}`}>
+                    <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}
+                      
+                    mobile:mt-4 tablet:mt-0 `}>
                       <div className='w-full h-full flex items-center'>
                         <ul className='text-black flex items-center justify-around w-full'>
                           <li>

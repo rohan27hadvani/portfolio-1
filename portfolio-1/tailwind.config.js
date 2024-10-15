@@ -23,7 +23,9 @@ export default {
         gilroy: ['Gilroy', 'mono'],
       },
       screens: {
-        'tablet': '768px',
+        'mobile': '320px',
+
+        'tablet': '640px',
   
         'laptop': '1024px',
   
@@ -34,6 +36,32 @@ export default {
         'screen16': '1695px'
       
       },
+      // minWidth: {
+      //   'mobile': '320px',
+
+      //   'tablet': '426px',
+  
+      //   'laptop': '769px',
+  
+      //   'desktop': '1280px',
+      
+      //   'screen14': '1440px',
+        
+      //   'screen16': '1695px'
+      // },
+      // maxWidth: {
+      //   'mobile': '425px',
+
+      //   'tablet': '768px',
+  
+      //   'laptop': '1024px',
+  
+      //   'desktop': '1280px',
+      
+      //   'screen14': '1440px',
+        
+      //   'screen16': '1695px'
+      // }
     },
   },
   plugins: [],
