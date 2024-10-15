@@ -8,16 +8,14 @@ export default {
     screens: {
       'tablet': '768px',
 
-
       'laptop': '1024px',
 
-
       'desktop': '1280px',
-      // Done
+    
       'screen14': '1440px',
-      // Done 
+      
       'screen16': '1695px'
-      // Done
+    
     },
 
     extend: {

@@ -10,7 +10,6 @@ import ProgressBar from './progressBar.jsx';
 import ThemeButton from './themeButton.jsx';
 import Navbar from './Navbar.jsx';
 
-// Import all page components directly
 import Projects from './Projects.jsx'; 
 import About from './About.jsx';
 import Contact from './Contact.jsx';
@@ -85,11 +84,29 @@ function App() {
                     {/* Profile Section */}
                     <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-2' : ''}`}>
                       <div className='text-black font-gilroy w-full h-full'>
-                        <div className='w-full h-full flex justify-end flex-col gap-4 laptop:gap-2 laptop:pb-[30px] text-5xl pl-6 pb-[60px] screen16:pl-5 tablet:pb-6'>
-                          <div className='font-bold laptop:scale-90 laptop:-ml-5 screen16:text-6xl tablet:text-[25px]'>Front-End Developer</div> 
-                          <div className='font-bold laptop:scale-90 laptop:-ml-5 screen16:text-6xl tablet:text-[25px]'>Thriving Author</div> 
-                          <div className='laptop:scale-90 laptop:-ml-5 screen16:text-6xl tablet:text-[25px]'>Sports Enthusiast</div> 
-                          <div className='font-bold laptop:scale-90 laptop:-ml-5 screen16:text-6xl tablet:text-[25px]'>Curious Geroger</div> 
+                        <div className='w-full h-full flex justify-end flex-col gap-4 text-5xl pl-6 pb-[60px] 
+                        
+                        tablet:pb-6 laptop:gap-3 desktop:gap-2 screen14:gap-4'>
+                          <div className='font-bold 
+                          
+                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                            Front-End Developer
+                          </div> 
+                          <div className='font-bold 
+                          
+                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                            Thriving Author
+                          </div> 
+                          <div className='
+                          
+                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                            Sports Enthusiast
+                          </div> 
+                          <div className='font-bold 
+                          
+                          tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
+                            Curious Geroger
+                          </div> 
                         </div>
                       </div>
                     </div>
@@ -103,8 +120,10 @@ function App() {
 
                     {/* Skills Progress Bars */}
                     <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}`}>
-                      <div className='w-full h-5/6 flex flex-row align-top screen14:scale-[0.80] screen14:-my-10 screen16:scale-[1.01] screen16:mt-3 screen16:-ml-10 desktop:scale-[0.8] desktop:-ml-8 desktop:-mt-10 laptop:scale-[0.66] laptop:-mt-[60px] laptop:-ml-[55px] tablet:scale-[0.45] tablet:-mt-[90px] tablet:-ml-[55px]'>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px] screen14:gap-y-8 desktop:gap-y-6 tablet:gap-y-[120px]'>
+                      <div className='w-full h-5/6 flex flex-row align-top justify-center
+                      
+                      screen14:scale-[0.80] screen14:-mt-12 screen14:gap-x-4 screen16:scale-100 screen16:mt-3 desktop:scale-[0.8] desktop:-mt-10 laptop:scale-[0.6] laptop:-mt-[60px] tablet:-mt-[95px] tablet:scale-[0.45]'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
@@ -118,7 +137,7 @@ function App() {
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
                           </div>
                         </div>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px] screen14:gap-y-8 desktop:gap-y-6 tablet:gap-y-[120px]'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -132,7 +151,7 @@ function App() {
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
                           </div>
                         </div>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:-mt-8 screen14:-mr-[80px] screen14:gap-y-8 desktop:gap-y-6 tablet:gap-y-[120px]'>
+                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
                           <div>
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
@@ -147,7 +166,9 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy screen14:mt-[100px] screen16:mt-[70px] screen16:scale-125 desktop:mt-12 laptop:mt-8 tablet:scale-75 tablet:mt-[100px]'>
+                      <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy 
+                      
+                      screen14:mt-[20px] screen16:mt-[70px] screen16:scale-125 desktop:mt-12 laptop:mt-8 laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:scale-125'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
                     </div>
@@ -157,7 +178,9 @@ function App() {
                         <div className='flex align-top h-1/3 pt-8 desktop:scale-95 desktop:-ml-2 laptop:scale-90 laptop:-ml-4 screen16:scale-110 screen16:ml-7 tablet:pt-6'>
                           <img src={circle} alt="" className='h-1/2'/>
                         </div>
-                        <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify desktop:scale-[0.98] laptop:text-[17px] screen14:text-[19px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px] tablet:mt-3'>
+                        <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify 
+                        
+                        laptop:text-[17px] desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
                         </section>
                       </div>
@@ -166,33 +189,45 @@ function App() {
                     <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}`}>
                       <div className='text-black font-gilroy w-full h-full'>
                         <div className='flex w-full h-3/5'>
-                          <div className='w-2/5 text-xl pl-6 pt-8 laptop:text-[20px] screen16:text-[34px] screen16:leading-10 tablet:text-[12px] tablet:leading-5 tablet:pt-6'>Have some questions?</div>
+                          <div className='w-2/5 text-xl pl-6 pt-8 
+                          
+                          laptop:text-[20px] tablet:text-[12px] tablet:leading-5 tablet:pt-6 desktop:text-[22px] desktop:leading-7 screen14:text-[24px]'>Have some questions?</div>
                           <div className='w-3/5 pr-6 pt-8 tablet:pt-6 tablet:pr-4 flex justify-end'>
                             <Link to="/Contact">
-                              <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black laptop:scale-90 screen16:scale-110 tablet:scale-[0.6]'/>
+                              <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black 
+                              
+                              laptop:scale-90 screen16:scale-110 tablet:scale-[0.6]'/>
                             </Link>
                           </div>
                         </div>
-                        <div className='h-2/5 flex justify-end flex-col text-5xl pl-6 pb-8 tablet:pb-6 laptop:scale-90 laptop:-ml-4 screen14:mt-10 desktop:mt-10 screen16:text-6xl screen16:mt-[60px] tablet:text-3xl'>Contact me</div>
+                        <div className='h-2/5 flex justify-end flex-col text-5xl pl-6 pb-8 
+                        
+                        tablet:text-3xl tablet:pb-6 laptop:text-4xl screen16:text-6xl'>Contact me</div>
                       </div>
                     </div>
 
                     <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}`}>
-                      <div className='w-full h-full flex items-center laptop:scale-[0.90]'>
+                      <div className='w-full h-full flex items-center'>
                         <ul className='text-black flex items-center justify-around w-full'>
                           <li>
                             <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
-                              <img src={insta} alt="Instagram" className="h-12 w-12 screen16:scale-125 tablet:scale-50" />
+                              <img src={insta} alt="Instagram" className="h-12 w-12
+                              
+                              tablet:scale-[0.6] laptop:scale-[0.8] desktop:scale-90 screen14:scale-110" />
                             </a>
                           </li>
                           <li>
                             <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b229/" target="_blank" rel="noopener noreferrer">
-                              <img src={LI} alt="LinkedIn" className="h-[74px] w-[74px] screen16:scale-125 tablet:scale-50" />
+                              <img src={LI} alt="LinkedIn" className="h-[74px] w-[74px]
+                              
+                              tablet:scale-[0.6] laptop:scale-[0.8] desktop:scale-90 screen14:scale-110" />
                             </a>
                           </li>
                           <li className='font-light hover:underline'>
                             <a href="https://github.com/rohan27hadvani" target='_blank' rel="noopener noreferrer">
-                              <img src={GH} alt="GitHub" className="h-14 w-14 screen16:scale-125 tablet:scale-50" />
+                              <img src={GH} alt="GitHub" className="h-14 w-14
+                              
+                              tablet:scale-[0.6] laptop:scale-[0.8] desktop:scale-90 screen14:scale-110" />
                             </a>
                           </li>
                         </ul>
