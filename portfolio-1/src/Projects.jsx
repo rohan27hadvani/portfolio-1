@@ -74,7 +74,7 @@ function Projects() {
             </div>
             <div className='h-1/3 text-2xl px-6 text-justify
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[40px] laptop:text-[20px] desktop:text-2xl'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[40px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
               Created a Android App with Java. Used Firebase for Google Authentication for Creating an Account. Fully Functional for Admins and Students.
             </div>
           </div>
@@ -101,7 +101,7 @@ function Projects() {
             </div>
             <div className='h-1/3 text-2xl px-6 text-justify
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[45px] laptop:text-[20px] desktop:text-2xl'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[45px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
               Fully functional ticketing app made with Next.js, Tailwind CSS and MongoDB. Used Mongoose library to connect my app to Atlas Database.
             </div>
           </div>
@@ -129,7 +129,7 @@ function Projects() {
             </div>
             <div className='h-1/3 text-2xl px-6 text-justify
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[55px] laptop:text-[20px] desktop:text-2xl'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[55px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
               Created a Fun Blackjack game with the help of JavaScript and CSS. 
             </div>
           </div>
@@ -157,7 +157,7 @@ function Projects() {
             </div>
             <div className='h-1/3 text-2xl px-6 text-justify
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
               Used JavaScript with CSS to create a Chrome Extention for storing URLs locally on you machine. 
             </div>
           </div>
@@ -185,7 +185,7 @@ function Projects() {
             </div>
             <div className='h-1/3 text-2xl px-6 text-justify
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
               Used React with CSS to create a Counter used to increment as well as decrement a number.
             </div>
           </div>
