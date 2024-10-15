@@ -76,7 +76,7 @@ function App() {
         <div className="w-full h-full">
           <div className="grid grid-rows-8 grid-cols-9 h-full w-full gap-4 
           
-          mobile:inline-block tablet:grid laptop:grid desktop:grid screen14:grid screen16:grid">
+          mobile:inline-block tablet:grid">
             <Navbar theme={themeClasses[theme]} load={load} />
             <Routes>
               <Route
