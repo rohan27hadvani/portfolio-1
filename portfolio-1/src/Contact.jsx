@@ -52,16 +52,20 @@ function Contact() {
 
   return (
     <div className={`row-span-7 col-span-9 ${themeClasses[theme].bg}`}>
-      <div className="w-full h-full grid grid-rows-7 grid-cols-9 gap-4 box-border">
+      <div className="w-full h-full grid grid-rows-7 grid-cols-9 gap-4 box-border
+      
+      mobile:inline-block tablet:grid">
 
 
-        <div className={`${themeClasses[theme].light} row-span-3 col-span-2 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-3 col-span-2 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-1
+          
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex flex-col place-items-center text-center w-full h-full'>
               <div className='h-3/5 w-4/5 text-4xl flex items-center'>
                 Download My Latest Resume!
               </div>
-              <div className='h-2/5 flex items-center'>
+              <div className='h-2/5 flex items-center mobile:mt-10 tablet:mt-0'>
                 <a href="">
                   <img src={Download} alt="Download" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
@@ -71,23 +75,15 @@ function Contact() {
         </div>
 
 
-        <div className={`${themeClasses[theme].light} row-span-1 col-span-5 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-1 col-span-5 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-2
+        
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
           <div className='w-full h-full content-center text-center text-4xl font-gilroy text-black'>
             Feel Free To Contact Me!
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-full place-items-center'>
-              <div className='w-full px-5 text-center text-4xl'>
-                I do not know what to do with this space right now....
-              </div>
-              
-            </div>
-            
-          </div>
-        </div>
+        
 
         {/* <div className={`${themeClasses[theme].light} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
           <div className='text-black font-gilroy w-full h-full'>
@@ -105,28 +101,40 @@ function Contact() {
           </div>
         </div> */}
 
-        <div className={`${themeClasses[theme].light} row-span-6 col-span-5 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-6 col-span-5 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-4
+          
+        mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full flex items-center justify-center'>
-            <div className='flex flex-col justify-center h-full py-8'> {/* Added flex column and vertical padding */}
-              <ul className='grid grid-cols-2 gap-y-[200px] gap-x-[200px] w-full items-center justify-items-center'>
+            <div className='flex flex-col justify-center h-full py-8'> 
+              <ul className='grid grid-cols-2 gap-y-[200px] gap-x-[200px] w-full items-center justify-items-center 
+              
+              mobile:inline-block tablet:grid'>
                 <li className='flex justify-center items-center'>
                   <a href="mailto:rohan.hadvani0@gmail.com" target="_blank" rel="noopener noreferrer">
-                    <img src={Email} alt="Email" className="h-[125px] w-[125px]" />
+                    <img src={Email} alt="Email" className="h-[125px] w-[125px]
+                    
+                    mobile:scale-75" />
                   </a>
                 </li>
                 <li className='flex justify-center items-center'>
                   <a href="https://www.instagram.com/rohanhadvani/" target="_blank" rel="noopener noreferrer">
-                    <img src={insta} alt="Instagram" className="h-[100px] w-[100px]" />
+                    <img src={insta} alt="Instagram" className="h-[100px] w-[100px]
+                    
+                    mobile:scale-75" />
                   </a>
                 </li>
                 <li className='flex justify-center items-center'>
                   <a href="https://www.linkedin.com/in/rohan-hadvani-aa159b229/" target="_blank" rel="noopener noreferrer">
-                    <img src={LI} alt="LinkedIn" className="h-[140px] w-[140px]" />
+                    <img src={LI} alt="LinkedIn" className="h-[140px] w-[140px]
+                    
+                    mobile:scale-75" />
                   </a>
                 </li>
                 <li className='flex justify-center items-center font-light hover:underline'>
                   <a href="https://github.com/rohan27hadvani" target='_blank' rel="noopener noreferrer">
-                    <img src={GH} alt="GitHub" className="h-[100px] w-[100px]" />
+                    <img src={GH} alt="GitHub" className="h-[100px] w-[100px]
+                    
+                    mobile:scale-75" />
                   </a>
                 </li>
               </ul>
@@ -135,18 +143,36 @@ function Contact() {
         </div>
 
 
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}`}>
+        <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-5
+          
+        mobile:mt-4 mobile:pb-8 tablet:mt-0 tablet:pb-0`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex flex-col place-items-center text-center w-full h-full'>
-              <div className='w-full h-1/2 pr-6 pt-8 flex justify-end'>
+              <div className='w-full h-1/2 pr-6 pt-8 flex justify-end mobile:justify-center tablet:justify-end'>
                 <a href="">
                   <img src={share} alt="Share" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
-              <div className='w-3/4 h-1/2 text-4xl inline-block align-bottom'>
+              <div className='w-3/4 h-1/2 text-4xl inline-block align-bottom 
+              
+              mobile:mt-8'>
                 Share Portfolio with others!
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className={`${themeClasses[theme].light} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-3
+          
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
+          <div className='text-black font-gilroy w-full h-full'>
+            <div className='flex w-full h-full place-items-center'>
+              <div className='w-full px-5 text-center text-4xl'>
+                I do not know what to do with this space right now....
+              </div>
+              
+            </div>
+            
           </div>
         </div>
 

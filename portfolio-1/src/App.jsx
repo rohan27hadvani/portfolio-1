@@ -199,7 +199,7 @@ function App() {
                         </div>
                         <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify 
                         
-                        mobile:mt-2
+                        mobile:mt-10
                         
                         laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.

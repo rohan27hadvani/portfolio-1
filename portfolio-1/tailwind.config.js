@@ -36,32 +36,11 @@ export default {
         'screen16': '1695px'
       
       },
-      // minWidth: {
-      //   'mobile': '320px',
-
-      //   'tablet': '426px',
-  
-      //   'laptop': '769px',
-  
-      //   'desktop': '1280px',
-      
-      //   'screen14': '1440px',
-        
-      //   'screen16': '1695px'
-      // },
-      // maxWidth: {
-      //   'mobile': '425px',
-
-      //   'tablet': '768px',
-  
-      //   'laptop': '1024px',
-  
-      //   'desktop': '1280px',
-      
-      //   'screen14': '1440px',
-        
-      //   'screen16': '1695px'
-      // }
+    },
+    variants: {
+      extend: {
+        order: ['responsive'],
+      },
     },
   },
   plugins: [],
