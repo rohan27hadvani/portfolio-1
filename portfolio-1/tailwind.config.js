@@ -23,13 +23,13 @@ export default {
         gilroy: ['Gilroy', 'mono'],
       },
       screens: {
-        'mobile': '320px',
-
+        'mobile': '0px',
+        // DONE 
         'tablet': '640px',
   
         'laptop': '1024px',
   
-        'desktop': '1280px',
+        'desktop': '1380px',
       
         'screen14': '1440px',
         

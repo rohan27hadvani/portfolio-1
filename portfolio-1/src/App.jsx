@@ -180,7 +180,7 @@ function App() {
                       
                       mobile:mt-10
                       
-                      screen14:mt-12 screen16:mt-[70px] screen16:text-3xl desktop:mt-4 laptop:mt-[60px] laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
+                      screen14:mt-12 screen16:mt-[70px] screen16:text-3xl desktop:mt-12 laptop:mt-[60px] laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
                     </div>
@@ -199,7 +199,7 @@ function App() {
                         </div>
                         <section className='flex items-end h-2/3 w-full text-[20px] pb-8 text-justify 
                         
-                        mobile:mt-10
+                        mobile:mt-10 tablet:mt-2
                         
                         laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
@@ -225,7 +225,7 @@ function App() {
                         </div>
                         <div className='h-2/5 flex justify-end flex-col text-5xl pl-6 pb-8 
                         
-                        mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-4xl screen16:text-6xl'>Contact me</div>
+                        mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-5xl'>Contact me</div>
                       </div>
                     </div>
 
