@@ -72,9 +72,9 @@ function Projects() {
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify
+            <div className='h-1/3 text-2xl px-6 text-justify justify-end
             
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[40px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
+            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[40px] laptop:text-[20px] desktop:text-2xl desktop:mt-0 desktop:pb-2'>
               Created a Android App with Java. Used Firebase for Google Authentication for Creating an Account. Fully Functional for Admins and Students.
             </div>
           </div>

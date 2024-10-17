@@ -31,7 +31,7 @@ export default {
   
         'desktop': '1380px',
       
-        'screen14': '1440px',
+        'screen14': '1441px',
         
         'screen16': '1695px'
       
