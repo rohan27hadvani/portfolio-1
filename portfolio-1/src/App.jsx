@@ -227,7 +227,7 @@ function App() {
 
                     <div className={`${themeClasses[theme].light} row-span-1 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}
                       
-                    mobile:mt-4 mobile:py-6 tablet:mt-0 tablet:py-0 mobile:scale-90`}>
+                    mobile:mt-4 mobile:py-6 tablet:mt-0 tablet:py-0 mobile:scale-[0.75] tablet:scale-100`}>
                     
                       <div className='w-full h-full flex justify-around text-2xl items-center font-gilroy 
                       
