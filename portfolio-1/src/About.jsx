@@ -239,7 +239,9 @@ function About() {
                 My Amazon Author Page!
               </div>
               <div className='w-1/5 pr-6 flex justify-end'>
-                <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                <a href="https://www.amazon.com/stores/Mr.-Rohan-Suresh-Hadvani/author/B09FLDYMC5?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" target='_blank'>
+                  <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
+                </a>
               </div>
             </div>
             <div className='h-2/3 text-xl flex flex-col justify-end text-justify pb-8 px-6 
