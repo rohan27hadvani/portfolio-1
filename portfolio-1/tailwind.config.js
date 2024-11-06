@@ -29,7 +29,7 @@ export default {
   
         'laptop': '1024px',
   
-        'desktop': '1380px',
+        'desktop': '1366px',
       
         'screen14': '1441px',
         

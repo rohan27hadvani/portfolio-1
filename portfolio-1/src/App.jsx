@@ -125,15 +125,13 @@ function App() {
                     </div>
 
                     {/* Skills Progress Bars */}
-                    <div className={`${themeClasses[theme].light} row-span-6 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}
+                    <div className={`${themeClasses[theme].light} row-span-5 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}
                       
-                    mobile:mt-4 tablet:mt-0 mobile:h-[600px] tablet:h-full`}>
-                      <div className='w-full h-5/6 flex flex-row align-top justify-center
+                    mobile:mt-4 tablet:mt-0`}>
+                      <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.7] mobile:-mt-[45px]
-                      
-                      screen14:scale-[0.80] screen14:-mt-12 screen14:gap-x-4 screen16:scale-100 screen16:mt-3 desktop:scale-[0.8] desktop:-mt-10 laptop:scale-[0.6] laptop:-mt-[60px] tablet:-mt-[95px] tablet:scale-[0.45]'>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
+                      mobile:scale-[0.75] mobile:-my-[90px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-10 desktop:mb-0 screen14:scale-[0.875]'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
@@ -147,7 +145,7 @@ function App() {
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
                           </div>
                         </div>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -161,7 +159,7 @@ function App() {
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
                           </div>
                         </div>
-                        <div className='progressBar laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6 tablet:gap-y-[100px]'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
                           <div>
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
@@ -176,14 +174,10 @@ function App() {
                           </div>
                         </div>
                       </div>
-                      <div className='w-full flex justify-around text-2xl items-center h-1/5 font-gilroy 
                       
-                      mobile:mt-10
-                      
-                      screen14:mt-12 screen16:mt-[70px] screen16:text-3xl desktop:mt-12 laptop:mt-[60px] laptop:scale-105 tablet:scale-75 tablet:mt-[80px] screen14:text-3xl'>
-                        <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
-                      </div>
                     </div>
+
+                    
 
                     <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}
                       
@@ -207,6 +201,8 @@ function App() {
                       </div>
                     </div>
 
+                    
+
                     <div className={`${themeClasses[theme].light} row-span-3 col-span-3 basic ${load ? 'moving-6' : ''}
                       
                     mobile:mt-4 tablet:mt-0 `}>
@@ -227,6 +223,18 @@ function App() {
                         
                         mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-5xl'>Contact me</div>
                       </div>
+                    </div>
+
+                    <div className={`${themeClasses[theme].light} row-span-1 w-full h-full flex flex-col col-span-3 basic ${load ? 'moving-4' : ''}
+                      
+                    mobile:mt-4 mobile:py-6 tablet:mt-0 tablet:py-0`}>
+                    
+                      <div className='w-full h-full flex justify-around text-2xl items-center font-gilroy 
+                      
+                       '>
+                        <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
+                      </div>
+
                     </div>
 
                     <div className={`${themeClasses[theme].dark} row-span-1 col-span-3 basic ${load ? 'moving-7' : ''}
