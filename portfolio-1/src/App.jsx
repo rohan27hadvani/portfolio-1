@@ -130,7 +130,7 @@ function App() {
                     mobile:mt-4 tablet:mt-0`}>
                       <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.7] mobile:-my-[90px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-5 desktop:mb-0 screen14:scale-[0.875]'>
+                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-5 desktop:mb-0 screen14:scale-[0.875]'>
                         <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
@@ -231,7 +231,7 @@ function App() {
                     
                       <div className='w-full h-full flex justify-around text-2xl items-center font-gilroy 
                       
-                       mobile:scale-[0.75] tablet:scale-100'>
+                       mobile:scale-[0.85] tablet:scale-90 laptop:scale-100'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
 
