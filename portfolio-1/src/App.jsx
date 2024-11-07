@@ -130,8 +130,8 @@ function App() {
                     mobile:mt-4 tablet:mt-0`}>
                       <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-5 desktop:mb-0 screen14:scale-[0.875]'>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
+                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-6 desktop:mb-0 screen14:scale-[0.875]'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
@@ -145,7 +145,7 @@ function App() {
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -159,7 +159,7 @@ function App() {
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[50px] desktop:gap-y-6'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
                           <div>
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>

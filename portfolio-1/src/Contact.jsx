@@ -153,9 +153,9 @@ function Contact() {
                   <img src={share} alt="Share" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
-              <div className='w-3/4 h-1/2 text-4xl inline-block align-bottom 
+              <div className='w-3/4 h-1/2 text-4xl inline-block align-bottom pb-4
               
-              mobile:mt-8'>
+              mobile:mt-8 tablet:mt-0'>
                 Share Portfolio with others!
               </div>
             </div>

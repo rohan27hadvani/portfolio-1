@@ -89,7 +89,7 @@ function About() {
             
             <div className='h-[90%] flex flex-col justify-start items-center'>
 
-            <div className='tablet:scale-[0.7] tablet:-mt-[160px] tablet:w-[150%] laptop:scale-[0.7] laptop:-mt-[140px] laptop:w-[155%] desktop:scale-[0.85] desktop:w-[115%] desktop:-mt-[80px] screen14:scale-[0.975] screen14:w-[105%] screen14:-mt-[40px] screen16:scale-[1.025] screen16:w-[95%] screen16:-mt-[10px]'>
+            <div className='tablet:scale-[0.7] tablet:-mt-[160px] tablet:w-[150%] laptop:scale-[0.68] laptop:-mt-[130px] laptop:w-[155%] desktop:scale-[0.85] desktop:w-[115%] desktop:-mt-[80px] screen14:scale-[0.975] screen14:w-[105%] screen14:-mt-[40px] screen16:scale-[1.025] screen16:w-[95%] screen16:-mt-[10px]'>
 
             <div className="relative pl-8 sm:pl-32 pt-4 group">
               <div className="font-semibold text-2xl uppercase mb-1
@@ -155,7 +155,7 @@ function About() {
               mobile:text-xl tablet:text-2xl">
                 WriteSpace
               </div>
-              <div className="pt-3 flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-[70%] before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-black after:border-4 after:box-content after:white after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+              <div className="pt-3 flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-[75%] before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-black after:border-4 after:box-content after:white after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
                 <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-sm font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-black bg-white rounded-full">
                   Aug, 2021
                 </time>
