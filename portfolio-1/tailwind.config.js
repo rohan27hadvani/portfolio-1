@@ -29,9 +29,9 @@ export default {
   
         'laptop': '1024px',
   
-        'desktop': '1280px',
+        'desktop': '1366px',
       
-        'screen14': '1440px',
+        'screen14': '1441px',
         
         'screen16': '1695px'
       
