@@ -44,18 +44,27 @@
 }
 
 .dark3 {
-  color: #90887B;
-  background: #90887B;
+  color: #52b69a;
+  background: #52b69a;
 }
 .light3 {
-  color: #D4C8B4;
-  background: #D4C8B4;
+  color: #b5e48c;
+  background: #b5e48c;
 }
 .bg3 {
-  color: #131112;
-  background: #131112;
+  color: #151A2E;
+  background: #151A2E;
 }
 
+/* #050506
+#700566
+#0C0609
+#0C0D16
+#110F1A
+#4C1358 
+#B28584
+#3E1029
+#151A2E */
 
 .radio-button__input:checked + .radio-button__label .radio-button__custom {
   background-color: #33373f;

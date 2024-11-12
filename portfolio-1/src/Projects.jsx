@@ -80,7 +80,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-4 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
+        <div className={`${themeClasses[theme].dark} row-span-4 col-span-4 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full pt-8'>
@@ -107,7 +107,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
+        <div className={`${themeClasses[theme].dark} row-span-4 col-span-2 basic ${load ? 'moving-p3' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
@@ -163,7 +163,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].light} row-span-3 col-span-4 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
+        <div className={`${themeClasses[theme].dark} row-span-3 col-span-4 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>

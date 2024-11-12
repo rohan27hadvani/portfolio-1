@@ -229,9 +229,9 @@ function App() {
                       
                     mobile:mt-4 mobile:py-6 tablet:mt-0 tablet:py-0`}>
                     
-                      <div className='w-full h-full flex justify-around text-2xl items-center font-gilroy 
+                      <div className='w-full h-full flex justify-around items-center font-gilroy 
                       
-                       mobile:scale-[0.85] tablet:scale-90 laptop:scale-100'>
+                       mobile:scale-90 desktop:scale-110'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
 

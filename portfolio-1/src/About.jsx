@@ -54,7 +54,7 @@ function About() {
       <div className="w-full h-full grid grid-rows-7 grid-cols-9 gap-4 box-border
       
       mobile:inline-block tablet:grid">
-        <div className={`${themeClasses[theme].light} row-span-3 col-span-6 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
+        <div className={`${themeClasses[theme].dark} row-span-3 col-span-6 basic ${load ? 'moving-p1' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
@@ -87,7 +87,9 @@ function About() {
               Experience
             </div>
             
-            <div className='h-[90%] flex flex-col justify-start items-center'>
+            <div className='h-[90%] flex flex-col justify-start items-center
+            
+            mobile:mt-0 tablet:-mt-1 desktop:mt-0'>
 
             <div className='tablet:scale-[0.7] tablet:-mt-[160px] tablet:w-[150%] laptop:scale-[0.68] laptop:-mt-[130px] laptop:w-[155%] desktop:scale-[0.85] desktop:w-[115%] desktop:-mt-[80px] screen14:scale-[0.975] screen14:w-[105%] screen14:-mt-[40px] screen16:scale-[1.025] screen16:w-[95%] screen16:-mt-[10px]'>
 
@@ -185,7 +187,7 @@ function About() {
         </div>
 
         {/* Div 3 */}
-        <div className={`${themeClasses[theme].light} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
+        <div className={`${themeClasses[theme].dark} row-span-4 col-span-3 basic ${load ? 'moving-p4' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
         
         mobile:mt-4 tablet:mt-0 tablet:order-4`}>
           <div className='text-black font-gilroy w-5/6 h-full pl-6'>

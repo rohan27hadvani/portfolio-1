@@ -18,13 +18,24 @@ export default {
         'dark3': 'darkblue',
         'light3': 'lightblue',
         'bg3': 'white',
+
+        // #050506
+        // #0C0609
+        // #700566
+        // #0C0D16
+        // #110F1A
+        // #4C1358 
+        // #B28584
+        // #3E1029
+        // #151A2E
+
       },
       fontFamily: {
         gilroy: ['Gilroy', 'mono'],
       },
       screens: {
         'mobile': '0px',
-        // DONE 
+        
         'tablet': '640px',
   
         'laptop': '1024px',

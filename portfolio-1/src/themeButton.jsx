@@ -11,7 +11,9 @@ const ThemeButton = ({ handleThemeChange, currentTheme }) => {
   }, [currentTheme, handleThemeChange]);
 
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center justify-around gap-5 
+    
+    desktop:gap-8">
       {/* Button 1 */}
       <div className="relative cursor-pointer">
         <input
