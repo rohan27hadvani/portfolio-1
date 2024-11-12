@@ -78,17 +78,22 @@ function Contact() {
   };
 
   const downloadResume = () => {
-    const resumeURL = "https://rohanhadvani.xyz";
-    window.open(resumeURL, '_blank')
-      .then(() => {
-        toast.success("Resume downloaded successfully!", {
-          position: "top-center",
-          autoClose: 1500,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: true,
-        });
+    const resumeURL = "https://drive.google.com/uc?export=download&id=1B2r980K7EoixC9wNU52kEL3Jzrufu2eI";
+    fetch(resumeURL)
+      .then((response) => {
+        if (response.ok) {
+          window.open(resumeURL, '_blank');
+          toast.success("Resume downloaded successfully!", {
+            position: "top-center",
+            autoClose: 1500,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+          });
+        } else {
+          throw new Error("Failed to download resume");
+        }
       })
       .catch((err) => {
         console.error("Failed to download resume: ", err);
