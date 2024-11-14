@@ -44,7 +44,7 @@ export default {
       
         'screen14': '1440px',
         
-        'screen16': '1695px'
+        'screen16': '1500px'
       
       },
     },
