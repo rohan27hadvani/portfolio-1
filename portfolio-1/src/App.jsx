@@ -130,8 +130,8 @@ function App() {
                     mobile:mt-4 tablet:mt-0`}>
                       <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] desktop:scale-[0.9] desktop:-mt-6 desktop:mb-0 screen14:scale-[0.875]'>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
+                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] laptop:-my-[80px] desktop:scale-[0.9] desktop:-mt-6 desktop:mb-0 screen14:scale-[0.875]'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
@@ -145,7 +145,7 @@ function App() {
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px]'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -159,7 +159,7 @@ function App() {
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] screen14:gap-y-[10px] desktop:gap-y-2'>
+                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px]'>
                           <div>
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
@@ -195,7 +195,7 @@ function App() {
                         
                         mobile:mt-10 tablet:mt-2
                         
-                        laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
+                        laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:m-0 screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
                           Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
                         </section>
                       </div>
@@ -219,9 +219,11 @@ function App() {
                             </Link>
                           </div>
                         </div>
-                        <div className='h-2/5 flex justify-end flex-col text-5xl pl-6 pb-8 
+                        <div className='h-2/5 w-full flex justify-end flex-col text-5xl pl-6 pb-8 
                         
-                        mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-5xl'>Contact me</div>
+                        mobile:mt-[60px] tablet:text-3xl tablet:mt-4 laptop:text-5xl screen14:m-0'>
+                          Contact me
+                        </div>
                       </div>
                     </div>
 
@@ -231,7 +233,7 @@ function App() {
                     
                       <div className='w-full h-full flex justify-around items-center font-gilroy 
                       
-                       mobile:scale-90 desktop:scale-110'>
+                       mobile:scale-90 desktop:scale-100'>
                         <ThemeButton handleThemeChange={handleThemeChange} currentTheme={theme} />
                       </div>
 
