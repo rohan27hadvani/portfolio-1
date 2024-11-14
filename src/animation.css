@@ -1,0 +1,335 @@
+/* Animations for App.jsx */
+
+@keyframes div1 {
+  0% {
+      transform: translate(0%, 30%) scale(0.1);
+      opacity: 0;
+      z-index: 5;
+    }
+  40% {
+      transform: translate(0%, 30%) scale(0.1);
+      opacity: 0;
+      z-index: 5;
+    }
+  100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      z-index: 5;
+    }
+  }
+  
+.moving-1 {
+  animation: div1 2.2s ease forwards;
+  }
+
+@keyframes div1e {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0%, 100%) scale(0.1);
+    opacity: 0;
+  }
+}
+
+.exiting-1 {
+  animation: div1e 0.8s ease forwards;
+}
+
+
+
+@keyframes div2 {
+0% {
+    transform: translate(40%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
+   }
+40% {
+    transform: translate(40%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
+  }
+  100% {
+     transform: translate(0, 0) scale(1);
+     opacity: 1;
+     z-index: 4;
+  }
+}
+  
+.moving-2 {
+  animation: div2 2.5s ease forwards;
+}
+
+@keyframes div2e {
+  0% {
+    transform: translate(0%, 0%) scale(1);
+    opacity: 1;
+  }
+  
+  100% {
+    transform: translate(0%, 100%) scale(0.1);
+    opacity: 0;
+  }
+}
+  
+.exiting-2 {
+  animation: div2e 0.8s ease forwards;
+}
+
+@keyframes div3 {
+0% {
+  transform: translate(-30%, 0%) scale(0.5);
+  opacity: 1;
+  z-index: 10;
+}
+50% {
+  transform: translate(-30%, 30%) scale(1);
+  opacity: 1;
+  z-index: 10;
+  }
+100% {
+  transform: translate(0, 0) scale(1);
+  opacity: 1;
+  z-index: 10;
+}}
+
+.moving-3 {
+  animation: div3 1.5s ease forwards;
+}
+
+@keyframes div4 {
+0% {
+    transform: translate(-30%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 3;
+    }
+50% {
+    transform: translate(-30%, 0%) scale(0.1);
+    opacity: 0;
+    z-index: 3;
+    }
+100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    z-index: 3;
+    }
+}
+  
+  .moving-4 {
+    animation: div4 2.6s ease forwards;
+  }
+
+@keyframes div5 {
+  0% {
+        transform: translate(100%, -150%) scale(0.1);
+        opacity: 0;
+        z-index: 2;
+      }
+  50% {
+        transform: translate(60%, -75%) scale(0.1);
+        opacity: 0;
+        z-index: 2;
+      }
+  100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        z-index: 2;
+      }
+  }
+  
+  .moving-5 {
+    animation: div5 2.85s ease forwards;
+  }
+
+@keyframes div6 {
+  0% {
+        transform: translate(0%, -150%) scale(0.1);
+        opacity: 0; 
+        z-index: 1;
+      }
+  50% {
+        transform: translate(0%, -80%) scale(0.1);
+        opacity: 0;
+        z-index: 1;
+      }
+  100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        z-index: 1;
+      }
+  }
+  
+  .moving-6 {
+    /* opacity: 0.65; */
+    animation: div6 3s ease forwards;
+  }
+
+@keyframes div7 {
+  0% {
+        transform: translate(-180%, -300%) scale(0.1);
+        opacity: 0;
+        z-index: 0;
+      }
+  50% {
+        transform: translate(-90%, -250%) scale(0.1);
+        opacity: 0;
+        z-index: 0;
+      }
+  100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        z-index: 0;
+      }
+  }
+  
+  .moving-7 {
+    animation: div7 3.2s ease forwards;
+  }
+
+
+  /* Animations for Projects.jsx */
+
+  /* Projects Page Navbar */
+@keyframes divpn { 
+  0% {
+        transform: translate(30%, 30%) scale(0.1);
+        opacity: 0;
+        z-index: 10;
+      }
+  60% {
+        transform: translate(30%, 30%) scale(0.1);
+        opacity: 0;
+        z-index: 10;
+      }
+  100% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+        z-index: 10;
+      }
+  }
+
+  .moving-pn {
+      animation: divpn 0.75s ease forwards;
+  }
+
+@keyframes divp1 { 
+  0% {
+      transform: translate(50%, -60%) scale(0.1);
+      opacity: 0;
+      z-index: 8;
+    }
+  60% {
+      transform: translate(50%, -60%) scale(0.1);
+      opacity: 0;
+      z-index: 8;
+    }
+  100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      z-index: 8;
+    }
+  }
+  
+  .moving-p1 {
+    animation: divp1 1s ease forwards;
+  }
+      
+
+@keyframes divp2 { 
+  0% {
+      transform: translate(30%, -60%) scale(0.1);
+       opacity: 0;
+      z-index: 7;
+    }
+   60% {
+      transform: translate(300%, -60%) scale(0.1);
+      opacity: 0;
+      z-index: 7;
+    }
+   100% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+      z-index: 7;
+     }
+   }
+    
+  .moving-p2 {
+     animation: divp2 1.2s ease forwards;
+   }
+      
+
+        @keyframes divp3 { 
+          0% {
+              transform: translate(50%, -60%) scale(0.1);
+              opacity: 0;
+              z-index: 6;
+            }
+          60% {
+              transform: translate(50%, -60%) scale(0.1);
+              opacity: 0;
+              z-index: 6;
+            }
+          100% {
+              transform: translate(0, 0) scale(1);
+              opacity: 1;
+              z-index: 6;
+            }
+        }
+      
+        .moving-p3 {
+            animation: divp3 1.4s ease forwards;
+        }
+          
+        @keyframes divp4 { 
+          0% {
+              transform: translate(40%, -50%) scale(0.1);
+              opacity: 0;
+              z-index: 5;
+              }
+          60% {
+              transform: translate(40%, -50%) scale(0.1);
+              opacity: 0;
+              z-index: 5;
+              }
+          100% {
+              transform: translate(0, 0) scale(1);
+              opacity: 1;
+              z-index: 5;
+              }
+        }
+        .moving-p4 {
+          animation: divp4 1.7s ease forwards;
+        }
+
+@keyframes divp5 { 
+  0% {
+    transform: translate(60%, -50%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
+            }
+  60% {
+    transform: translate(600%, -50%) scale(0.1);
+    opacity: 0;
+    z-index: 4;
+            }
+  100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    z-index: 4;
+            }
+  }
+      
+  .moving-p5 {
+  animation: divp5 2s ease forwards;
+  }
+
+/* Animation for About Page */
+
+
+
+
+
+/* Animation for Contact Page */
+

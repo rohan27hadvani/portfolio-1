@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.basic {
+  @apply flex text-white rounded-3xl hover:shadow-md hover:shadow-gray-400
+    
+}
+
+.box-1-image {
+  @apply bg-transparent
+}
+
+.progressBar {
+  @apply flex flex-col w-full h-full scale-[0.80] items-center gap-y-8 -mt-6
+}
+
+
+
+.dark1 {
+  color: #F8AFA6;
+  background: #F8AFA6;
+}
+.light1 {
+  color: #FADCD9;
+  background: #FADCD9;
+}
+.bg1 {
+  color: #F9F1F0;
+  background: #F9F1F0;
+}
+
+.dark2 {
+  color: #90887B;
+  background: #90887B;
+}
+.light2 {
+  color: #D4C8B4;
+  background: #D4C8B4;
+}
+.bg2 {
+  color: #131112;
+  background: #131112;
+}
+
+.dark3 {
+  color: #52b69a;
+  background: #52b69a;
+}
+.light3 {
+  color: #b5e48c;
+  background: #b5e48c;
+}
+.bg3 {
+  color: #151A2E;
+  background: #151A2E;
+}
+
+/* #050506
+#700566
+#0C0609
+#0C0D16
+#110F1A
+#4C1358 
+#B28584
+#3E1029
+#151A2E */
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #33373f;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #95969880;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: black;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: black;
+  box-shadow: 0 0 20px #95969880;
+}
+
+.radio-button__custom {
+  transition: all 0.3s ease;
+}
+
+.custom-bullet {
+  position: relative;
+  padding-left: 1.5rem; /* Adjust spacing for the bullet */
+}
+
+.custom-bullet::before {
+  content: '•'; /* The bullet symbol */
+  position: absolute;
+  left: 0;
+  top: 0.2rem; /* Adjust this value based on the text size */
+  font-size: 2.25rem; /* Adjust the size of the bullet */
+  color: black; /* Change bullet color */
+}
+
+
