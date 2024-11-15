@@ -91,7 +91,7 @@ function About() {
             
             mobile:mt-0 tablet:-mt-1 desktop:mt-0'>
 
-            <div className='tablet:scale-[0.7] tablet:-mt-[160px] tablet:w-[150%] laptop:scale-[0.68] laptop:-mt-[130px] laptop:w-[155%] desktop:scale-[0.85] desktop:w-[115%] desktop:-mt-[80px] screen14:scale-[0.975] screen14:w-[105%] screen14:-mt-[40px] screen16:scale-[1.025] screen16:w-[95%] screen16:-mt-[10px]'>
+            <div className='tablet:scale-[0.7] tablet:-mt-[160px] tablet:w-[150%] laptop:scale-[0.68] laptop:-mt-[130px] laptop:w-[155%] desktop:scale-[0.85] desktop:w-[115%] desktop:-mt-[80px] screen14:scale-[0.85] screen14:w-[105%] screen14:-mt-[80px] screen16:scale-[0.9] screen16:w-[95%] screen16:-mt-[50px] '>
 
             <div className="relative pl-8 sm:pl-32 pt-4 group">
               <div className="font-semibold text-2xl uppercase mb-1
