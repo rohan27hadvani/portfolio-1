@@ -79,34 +79,38 @@ function Contact() {
 
   const downloadResume = () => {
     const resumeURL = "https://drive.google.com/uc?export=download&id=1B2r980K7EoixC9wNU52kEL3Jzrufu2eI";
-    fetch(resumeURL)
-      .then((response) => {
-        if (response.ok) {
-          window.open(resumeURL, '_blank');
-          toast.success("Resume downloaded successfully!", {
-            position: "top-center",
-            autoClose: 1500,
-            hideProgressBar: true,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-          });
-        } else {
-          throw new Error("Failed to download resume");
-        }
-      })
-      .catch((err) => {
-        console.error("Failed to download resume: ", err);
-        toast.error("Failed to download resume", {
-          position: "top-center",
-          autoClose: 3000,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: false,
-          draggable: true,
-        });
+    try {
+      const link = document.createElement("a"); // Create a hidden <a> element
+      link.href = resumeURL;
+      link.download = "Rohan_Hadvani_Resume.pdf"; // Optional custom file name
+      document.body.appendChild(link); // Append <a> to the DOM
+      link.click(); // Trigger the download
+      document.body.removeChild(link); // Clean up by removing the <a> element
+  
+      // Success toast
+      toast.success("Resume downloaded successfully!", {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
       });
+    } catch (err) {
+      console.error("Failed to download resume: ", err);
+  
+      // Error toast
+      toast.error("Failed to download resume", {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+      });
+    }
   };
+  
 
   return (
     <div className={`row-span-7 col-span-9 ${themeClasses[theme].bg}`}>
@@ -125,7 +129,7 @@ function Contact() {
                   src={Download} 
                   alt="Download" 
                   className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' 
-                  onClick={downloadResume}
+                  onClick={downloadResume} 
                 />
               </div>
             </div>
