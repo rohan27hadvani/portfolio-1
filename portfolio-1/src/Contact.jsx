@@ -198,7 +198,7 @@ function Contact() {
           </div>
         </div>
 
-        <div className={`${themeClasses[theme].dark} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-3
+        {/* <div className={`${themeClasses[theme].dark} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-3
         mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
           <div className='text-black font-gilroy w-full h-full'>
             <div className='flex flex-col px-5 w-full h-full text-center items-center justify-center'>
@@ -206,14 +206,47 @@ function Contact() {
                 Quote of the week:-
               </div>
               <div className='w-full text-justify text-3xl pt-8'>
-              &lsquo;You don&apos;t have to see the whole staircase, just take the first step&quot;.
+              &quot;You don&apos;t have to see the whole staircase, just take the first step&quot;.
               </div>
               <div className='text-right text-3xl font-semibold pt-8'>
                -Martin Luther King Jr
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <div className={`${themeClasses[theme].dark} row-span-2 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-3
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
+          <div className='text-black font-gilroy w-full h-full'>
+            <div className='flex flex-col px-5 w-full h-full text-center items-center justify-center'>
+              <div className='w-full text-left text-5xl tablet:text-4xl desktop:text-5xl'>
+                Quote of the week:
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div className={`${themeClasses[theme].light} row-span-4 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-4
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
+          <div className='text-black font-gilroy w-full h-full'>
+            <div className='flex flex-col px-5 w-full h-full text-center items-center justify-center'>
+            <div className='w-full text-justify text-3xl tablet:text-2xl desktop:text-4xl'>
+              &quot;You don&apos;t have to see the whole staircase, just take the first step.&quot;
+              </div>
+            </div>
+          </div>
+        </div> 
+
+        <div className={`${themeClasses[theme].dark} row-span-1 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-7
+        mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
+          <div className='text-black font-gilroy w-full h-full'>
+            <div className='flex flex-col px-5 w-full h-full text-center items-center justify-center'>
+            <div className='text-right font-semibold text-3xl tablet:text-2xl desktop:text-3xl'>
+               -Martin Luther King Jr
+              </div>
+            </div>
+          </div>
+        </div> 
 
       </div> 
       <ToastContainer />
