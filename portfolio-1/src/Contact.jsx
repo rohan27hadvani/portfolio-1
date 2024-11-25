@@ -9,7 +9,7 @@ import insta from './assets/icons/Insta.svg';
 import LI from './assets/icons/LinkedIn.svg';
 import Email from './assets/icons/Email.svg';
 import Download from './assets/icons/Download.svg';
-import share from './assets/icons/Share.svg';
+import share from './assets/icons/Share.png';
 
 function Contact() {
   const [load, setLoad] = useState(false);
@@ -78,11 +78,11 @@ function Contact() {
   };
 
   const downloadResume = () => {
-    const resumeURL = "https://drive.google.com/uc?export=download&id=1B2r980K7EoixC9wNU52kEL3Jzrufu2eI";
+    const resumeURL = "https://drive.google.com/uc?export=download&id=1-WOOVLhdbsr8Fnt4DfB8ckb4O1_ZlZ4p";
     try {
       const link = document.createElement("a"); // Create a hidden <a> element
       link.href = resumeURL;
-      link.download = "Rohan_Hadvani_Resume.pdf"; // Optional custom file name
+      link.download = "Rohan Hadvani.pdf"; // Optional custom file name
       document.body.appendChild(link); // Append <a> to the DOM
       link.click(); // Trigger the download
       document.body.removeChild(link); // Clean up by removing the <a> element
