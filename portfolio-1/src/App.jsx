@@ -94,7 +94,7 @@ function App() {
                           <div className='font-bold 
                           
                           mobile:text-3xl tablet:text-[25px] laptop:text-4xl screen14:text-5xl'>
-                            Front-End Developer
+                            Full-Stack Developer
                           </div> 
                           <div className='font-bold 
                           
@@ -153,7 +153,7 @@ function App() {
                             <ProgressBar strokeDashoffset="30" theme={themeClasses[theme]} imageSrc={ts}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="60" theme={themeClasses[theme]} imageSrc={nxt}/>
+                            <ProgressBar strokeDashoffset="45" theme={themeClasses[theme]} imageSrc={nxt}/>
                           </div>
                           <div>
                             <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
@@ -164,7 +164,7 @@ function App() {
                             <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={aStudio}/>
+                            <ProgressBar strokeDashoffset="60" theme={themeClasses[theme]} imageSrc={aStudio}/>
                           </div>
                           <div>
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={node}/>
@@ -196,7 +196,7 @@ function App() {
                         mobile:mt-4 tablet:mt-2
                         
                         laptop:text-[17px] laptop:mt-3 desktop:text-[19px] screen14:m-0 screen14:text-[22px] screen16:text-[26px] screen16:mt-2 tablet:text-[12px]'>
-                          Passionate front-end developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into full-stack and mobile app development to craft versatile digital solutions.
+                          Passionate Full-Stack Developer focused on creating dynamic, user-friendly websites. Always eager to learn more, I&apos;m expanding my skills into mobile app development to craft versatile digital solutions.
                         </section>
                       </div>
                     </div>

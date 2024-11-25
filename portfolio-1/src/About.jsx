@@ -69,8 +69,9 @@ function About() {
 
             <div className='h-4/5 text-xl flex flex-col justify-end text-justify pb-8 px-6 
             
-            mobile:pt-4 tablet:pt-0 tablet:text-[12px] tablet:leading-[22px] tablet:pb-3 laptop:text-[14px] laptop:leading-6 laptop:pb-4 desktop:text-lg desktop:leading-7 desktop:pb-5 screen14:text-xl screen14:pb-6 screen16:pb-8'>
-            I&apos;ve been fascinated by technology from a young age, which led me to pursue front-end development and now back-end development as I aim to become a full-stack developer by year&apos;s end. Beyond coding, I&apos;ve had the privilege of playing football at the national level, which reflects my commitment both on and off the field. When I&apos;m not immersed in tech, I&apos;m reading fiction or non-fiction, traveling to explore new places, or capturing moments through photography. My passion for learning new coding languages and frameworks keeps me motivated to push the boundaries of what I can create.
+            mobile:pt-4 tablet:pt-0 tablet:text-[12px] tablet:leading-[22px] tablet:pb-3 laptop:text-[14px] laptop:leading-6 laptop:pb-4 desktop:text-lg desktop:leading-7 desktop:pb-5 screen14:text-[19px] screen14:pb-6 screen16:pb-8'>
+            As a Full Stack Software Developer, I am passionate about creating innovative, user-friendly software solutions that span both front-end and back-end development. My expertise in JavaScript and TypeScript allows me to develop high-quality, functional software.
+            Beyond coding, I&apos;ve had the privilege of playing football at the national level, which reflects my commitment both on and off the field. When I&apos;m not immersed in tech, I&apos;m reading fiction or non-fiction, traveling to explore new places, or capturing moments through photography. My passion for learning new coding languages and frameworks keeps me motivated to push the boundaries of what I can create.
             </div>
 
           </div>
