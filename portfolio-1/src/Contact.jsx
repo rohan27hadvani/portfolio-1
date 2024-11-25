@@ -201,9 +201,15 @@ function Contact() {
         <div className={`${themeClasses[theme].dark} row-span-7 col-span-2 basic ${load ? 'moving-p5' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'} order-3
         mobile:mt-4 mobile:py-8 tablet:mt-0 tablet:py-0`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-full place-items-center'>
-              <div className='w-full px-5 text-center text-4xl'>
-                I do not know what to do with this space right now....
+            <div className='flex flex-col px-5 w-full h-full text-center items-center justify-center'>
+              <div className='w-full pt-4 text-left text-5xl tablet:pt-8'>
+                Quote of the week:-
+              </div>
+              <div className='w-full text-justify text-3xl pt-8'>
+              &lsquo;You don&apos;t have to see the whole staircase, just take the first step&quot;.
+              </div>
+              <div className='text-right text-3xl font-semibold pt-8'>
+               -Martin Luther King Jr
               </div>
             </div>
           </div>
