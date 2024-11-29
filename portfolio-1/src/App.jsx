@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './App.css';
 import './fonts.css';
 import './animation.css';
-import ProfilePhoto from './assets/profilePhoto.JPG';
+import ProfilePhoto from './assets/profilePhoto2.JPG';
 import ProgressBar from './progressBar.jsx';
 import ThemeButton from './themeButton.jsx';
 import Navbar from './Navbar.jsx';
@@ -14,8 +14,8 @@ import Projects from './Projects.jsx';
 import About from './About.jsx';
 import Contact from './Contact.jsx';
 
-import c from './assets/icons/C.ico';
-import cpp from './assets/icons/C++.svg';
+// import c from './assets/icons/C.ico'; 
+// import cpp from './assets/icons/C++.svg';
 import html from './assets/icons/HTML.svg';
 import css from './assets/icons/CSS.svg';
 import js from './assets/icons/JS.svg';
@@ -31,7 +31,11 @@ import circle from './assets/icons/Random Circle.svg';
 import GH from './assets/icons/GitHub.svg';
 import insta from './assets/icons/Insta.svg';
 import LI from './assets/icons/LinkedIn.svg';
-import aStudio from './assets/icons/AStudio.svg'
+// import aStudio from './assets/icons/AStudio.svg'
+// import java from './assets/icons/Java.svg' 
+import sql from './assets/icons/SQL.svg'
+import mdb from './assets/icons/MongoDB.svg'
+import api from './assets/icons/API.svg'
 
 function App() {
   const [load, setLoad] = useState(false);
@@ -130,22 +134,23 @@ function App() {
                     mobile:mt-4 tablet:mt-0`}>
                       <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.7] mobile:-my-[90px] tablet:-my-[75px] tablet:scale-[0.52] laptop:scale-[0.6] laptop:-my-[80px] desktop:scale-[0.9] desktop:-mt-6 desktop:mb-0 screen14:scale-[0.875] screen16:scale-100'>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px] screen16:gap-y-[30px]'>
+                      mobile:scale-[0.65] mobile:-my-[90px] mobile:gap-x-[12px] tablet:-mt-[100px] tablet:scale-[0.5] tablet:gap-x-[50px] laptop:-mt-[90px] laptop:scale-[0.5] laptop:-my-[80px] desktop:gap-x-[40px] desktop:scale-[0.7] desktop:-mt-[65px] screen14:scale-[0.8] screen14:gap-x-[40px] screen14:-mt-[57px] screen16:-mt-[32px] screen16:gap-x-[50px] screen16:scale-[0.85]'>
+                        
+                        <div className='progressBar'>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={html} />
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={tw}/>
+                            <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
                           </div>
                           <div>
                             <ProgressBar strokeDashoffset="25" theme={themeClasses[theme]} imageSrc={react}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={c}/>
+                            <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={mdb}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px] screen16:gap-y-[30px]'>
+                        <div className='progressBar '>
                           <div>
                             <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={css}/>
                           </div>
@@ -156,27 +161,26 @@ function App() {
                             <ProgressBar strokeDashoffset="45" theme={themeClasses[theme]} imageSrc={nxt}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="50" theme={themeClasses[theme]} imageSrc={cpp}/>
+                            <ProgressBar strokeDashoffset="15" theme={themeClasses[theme]} imageSrc={sql}/>
                           </div>
                         </div>
-                        <div className='progressBar mobile:gap-y-[50px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[40px] screen14:gap-y-[10px] screen16:gap-y-[30px]'>
+                        <div className='progressBar'>
                           <div>
-                            <ProgressBar strokeDashoffset="20" theme={themeClasses[theme]} imageSrc={js}/>
+                            <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={tw}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="60" theme={themeClasses[theme]} imageSrc={aStudio}/>
+                            <ProgressBar strokeDashoffset="60" theme={themeClasses[theme]} imageSrc={py}/>
                           </div>
                           <div>
                             <ProgressBar strokeDashoffset="40" theme={themeClasses[theme]} imageSrc={node}/>
                           </div>
                           <div>
-                            <ProgressBar strokeDashoffset="30" theme={themeClasses[theme]} imageSrc={py}/>
+                            <ProgressBar strokeDashoffset="10" theme={themeClasses[theme]} imageSrc={api}/>
                           </div>
                         </div>
                       </div>
                       
                     </div>
-
                     
 
                     <div className={`${themeClasses[theme].dark} row-span-3 col-span-3 basic ${load ? 'moving-5' : ''}

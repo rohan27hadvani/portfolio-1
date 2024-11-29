@@ -12,7 +12,7 @@
 }
 
 .progressBar {
-  @apply flex flex-col w-full h-full scale-[0.80] items-center gap-y-8 -mt-6
+  @apply flex flex-col w-full h-full items-center mobile:gap-y-[60px] tablet:gap-y-[80px] laptop:gap-y-[60px] desktop:gap-y-[55px] screen14:mt-[10px] screen14:gap-y-[30px] screen16:gap-y-[10px]
 }
 
 
