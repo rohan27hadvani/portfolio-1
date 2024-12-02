@@ -43,8 +43,8 @@ export default {
         'desktop': '1366px',
       
         'screen14': '1440px',
-        
-        'screen16': '1500px'
+
+        'screen16': '1600px'
       
       },
     },

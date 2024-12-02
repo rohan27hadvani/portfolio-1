@@ -134,7 +134,7 @@ function App() {
                     mobile:mt-4 tablet:mt-0`}>
                       <div className='w-full h-full flex flex-row align-top justify-center
                       
-                      mobile:scale-[0.65] mobile:-my-[90px] mobile:gap-x-[12px] tablet:-mt-[100px] tablet:scale-[0.5] tablet:gap-x-[50px] laptop:-mt-[90px] laptop:scale-[0.5] laptop:-my-[80px] desktop:gap-x-[40px] desktop:scale-[0.7] desktop:-mt-[65px] screen14:scale-[0.8] screen14:gap-x-[40px] screen14:-mt-[57px] screen16:-mt-[32px] screen16:gap-x-[50px] screen16:scale-[0.85]'>
+                      mobile:scale-[0.65] mobile:-my-[90px] mobile:gap-x-[12px] tablet:-mt-[100px] tablet:scale-[0.5] tablet:gap-x-[50px] laptop:-mt-[100px] laptop:scale-[0.5] laptop:-my-[80px] desktop:gap-x-[40px] desktop:scale-[0.7] desktop:-mt-[65px] screen14:scale-[0.7] screen14:gap-x-[55px] screen14:-mt-[78px] screen16:-mt-[32px] screen16:gap-x-[50px] screen16:scale-[0.85]'>
                         
                         <div className='progressBar'>
                           <div>
