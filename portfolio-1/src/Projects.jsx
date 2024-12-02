@@ -5,6 +5,20 @@ import './App.css';
 import './fonts.css';
 import './animation.css';
 
+import html from './assets/icons/HTML.svg';
+import css from './assets/icons/CSS.svg';
+import fb from './assets/icons/Firebase.svg'
+import java from './assets/icons/Java.svg' 
+import aStudio from './assets/icons/AStudio.svg'
+import js from './assets/icons/JS.svg';
+// import ts from './assets/icons/TS.svg';
+import tw from './assets/icons/Tailwind.svg';
+// import py from './assets/icons/Python.svg';
+import nxt from './assets/icons/Next.svg';
+// import node from './assets/icons/Node.svg';
+import mdb from './assets/icons/MongoDB.svg'
+import react from './assets/icons/React.svg';
+
 function Projects() {
   const [load, setLoad] = useState(false);
   const [isContentVisible, setIsContentVisible] = useState(false);
@@ -56,26 +70,30 @@ function Projects() {
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3 pt-8
-            
-            tablet:pt-3 laptop:pt-8'>
-              <div className='w-3/5 text-3xl font-semibold pl-6
-              
-              mobile:text-2xl tablet:text-[20px] laptop:text-[27px] desktop:text-3xl'>
+            <div className='projectTopDiv'>
+              <div className='projectHeadingDiv'>
                 Library Management System
               </div>
-              <div className='w-2/5 pr-6 flex justify-end 
+              <div className=' 
               
-              tablet:scale-[0.75] tablet:-mt-2 tablet:pr-0 laptop:scale-100 laptop:pr-6'>
+              projectLinkIcon'>
                 <a href="https://github.com/rohan27hadvani/SVIT-LMS" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify justify-end
-            
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[40px] laptop:text-[20px] desktop:text-2xl desktop:mt-0 desktop:pb-2'>
-              Created a Android App with Java. Used Firebase for Google Authentication for Creating an Account. Fully Functional for Admins and Students.
+            <div className='h-2/3 px-4 pb-4 flex flex-col items-start justify-end'>
+              <div className='projectDes'>
+              An android app with Java. Firebase for Google Authentication. Functional for Libriarians/Admins and Students.
+              </div>
+              <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl'> 
+                Tech Stack:
+                  <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
+                    <img src={java} className='techImg'/>
+                    <img src={aStudio} className='techImg'/>
+                    <img src={fb} className='techImg'/>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -83,26 +101,31 @@ function Projects() {
         <div className={`${themeClasses[theme].dark} row-span-4 col-span-4 basic ${load ? 'moving-p2' : ''} transition-opacity duration-1000 ease ${isContentVisible ? 'opacity-100' : 'opacity-0'}
           
         mobile:mt-4 tablet:mt-0`}>
-          <div className='text-black font-gilroy w-full h-full pt-8'>
-            <div className='flex w-full h-2/3 pt-8 
-            
-            tablet:-mt-4 tablet:pt-0 laptop:-mt-2'>
-              <div className='w-3/5 text-3xl pl-6 font-semibold
-              
-              mobile:text-2xl tablet:text-[20px] laptop:text-[27px] desktop:text-3xl'>
+          <div className='text-black font-gilroy w-full h-full'>
+            <div className='projectTopDiv'>
+              <div className='projectHeadingDiv'>
                 Ticketing App/ Jira Clone
               </div>
-              <div className='w-2/5 pr-6 flex justify-end
-              tablet:scale-[0.75] tablet:-mt-2 tablet:pr-0 laptop:scale-100 laptop:pr-6 laptop:mt-0'>
+              <div className='projectLinkIcon'>
                 <a href="https://github.com/rohan27hadvani/ticketing-app" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify
-            
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[45px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
-              Fully functional ticketing app made with Next.js, Tailwind CSS and MongoDB. Used Mongoose library to connect my app to Atlas Database.
+            <div className='h-2/3 px-4 pb-4 flex flex-col items-start justify-end'>
+              <div className='projectDes'>
+                Fully functional ticketing app made with Next.js, Tailwind CSS and MongoDB. Used Mongoose library to connect my app to Atlas Database.  
+              </div>
+              <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl'> 
+                Tech Stack:
+                  <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
+                    <img src={html} className='techImg'/>
+                    <img src={css} className='techImg'/>
+                    <img src={tw} className='techImg'/>
+                    <img src={nxt} className='techImg'/>
+                    <img src={mdb} className='techImg'/>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -111,26 +134,27 @@ function Projects() {
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3 pt-8
-            
-            tablet:pt-3 laptop:pt-8'>
-              <div className='w-3/5 text-3xl font-semibold pl-6
-              
-              mobile:text-2xl tablet:text-[20px] laptop:text-[27px] desktop:text-3xl'>
+            <div className='projectTopDiv'>
+              <div className='projectHeadingDiv'>
                 Game of Blackjack
               </div>
-              <div className='w-2/5 pr-6 flex justify-end
-              
-              tablet:scale-[0.75] tablet:-mt-2 tablet:pr-0 laptop:scale-100 laptop:pr-6 laptop:mt-0'>
+              <div className='projectLinkIcon'>
                 <a href="https://github.com/rohan27hadvani/Blackjack-Game" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify
-            
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[55px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
-              Created a Fun Blackjack game with the help of JavaScript and CSS. 
+            <div className='h-2/3 px-4 pb-4 flex flex-col items-start justify-end'>
+              <div className='projectDes'>
+                Created a Fun Blackjack game with the help of JavaScript and CSS.  
+              </div>
+              <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl'> 
+                Tech Stack:
+                  <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
+                    <img src={html} className='techImg'/>
+                    <img src={css} className='techImg'/>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -139,26 +163,28 @@ function Projects() {
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3 pt-8
-            
-            tablet:pt-3 laptop:pt-8'>
-              <div className='w-3/5 text-3xl font-semibold pl-6
-              
-              mobile:text-2xl tablet:text-[20px] laptop:text-[27px] desktop:text-3xl'>
-                Private Bookmark Chrome Extention
+            <div className='projectTopDiv'>
+              <div className='projectHeadingDiv'>
+                Private Bookmark (Chrome Extention)
               </div>
-              <div className='w-2/5 pr-6 flex justify-end
-              
-              tablet:scale-[0.75] tablet:-mt-2 tablet:pr-0 laptop:scale-100 laptop:mt-0 laptop:pr-6'>
+              <div className='projectLinkIcon'>
                 <a href="https://github.com/rohan27hadvani/Private-Bookmark-Chrome-Ext" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify
-            
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
-              Used JavaScript with CSS to create a Chrome Extention for storing URLs locally on you machine. 
+            <div className='h-2/3 px-4 pb-4 flex flex-col items-start justify-end'>
+              <div className='projectDes'>
+                Used JavaScript with CSS to create a Chrome Extention for storing URLs locally on you machine. 
+              </div>
+              <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl'> 
+                Tech Stack:
+                  <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
+                    <img src={html} className='techImg'/>
+                    <img src={css} className='techImg'/>
+                    <img src={js} className='techImg'/>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
@@ -167,26 +193,28 @@ function Projects() {
           
         mobile:mt-4 tablet:mt-0`}>
           <div className='text-black font-gilroy w-full h-full'>
-            <div className='flex w-full h-2/3 pt-8
-            
-            tablet:pt-3 laptop:pt-8'>
-              <div className='w-3/5 text-3xl font-semibold pl-6
-              
-              mobile:text-2xl tablet:text-[20px] laptop:text-[27px] desktop:text-3xl'>
+            <div className='projectTopDiv'>
+              <div className='projectHeadingDiv'>
                 Basic React Counter App
               </div>
-              <div className='w-2/5 pr-6 flex justify-end
-              
-              tablet:scale-[0.75] tablet:-mt-2 tablet:pr-0 laptop:scale-100 laptop:pr-6'>
+              <div className='projectLinkIcon'>
                 <a href="https://github.com/rohan27hadvani/React-Counter-App/tree/main" target='_blank'>
                   <img src={carrow} alt="" className='h-12 hover:cursor-pointer hover:border-[0.5px] hover:border-black' />
                 </a>
               </div>
             </div>
-            <div className='h-1/3 text-2xl px-6 text-justify
-            
-            mobile:text-lg mobile:mt-3 mobile:pb-4 tablet:text-[15px] tablet:-mt-[30px] laptop:text-[20px] desktop:text-2xl desktop:align-text-bottom desktop:mt-0 desktop:pb-2'>
-              Used React with CSS to create a Counter used to increment as well as decrement a number.
+            <div className='h-2/3 px-4 pb-4 flex flex-col items-start justify-end'>
+              <div className='projectDes'>
+                Used React with CSS to create a Counter used to increment as well as decrement a number.
+              </div>
+              <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl'> 
+                Tech Stack:
+                  <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
+                    <img src={html} className='techImg'/>
+                    <img src={css} className='techImg'/>
+                    <img src={react} className='techImg'/>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
