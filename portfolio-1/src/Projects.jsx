@@ -153,6 +153,7 @@ function Projects() {
                   <div className='mobile:text-lg tablet:text-[15px] laptop:text-[20px] desktop:text-2xl flex'>
                     <img src={html} className='techImg'/>
                     <img src={css} className='techImg'/>
+                    <img src={js} className='techImg' />
                   </div>
               </div>
             </div>
